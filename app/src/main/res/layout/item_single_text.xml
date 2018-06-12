@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.weekend.views.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightSmall"
+    android:ellipsize="end"
+    android:gravity="right|center_vertical"
+    android:maxLines="2"
+    android:paddingLeft="@dimen/space_10"
+    android:paddingRight="@dimen/space_10"
+    android:text="@string/please_select_reason"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:textColor="@color/color_105_111_116"
+    android:textSize="@dimen/txt_14"
+    app:font_type="AvenirNextLTPro_Regular_0" />

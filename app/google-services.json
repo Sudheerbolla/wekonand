@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "467675705579",
+    "firebase_url": "https://weekend-49070.firebaseio.com",
+    "project_id": "weekend-49070",
+    "storage_bucket": "weekend-49070.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467675705579:android:e6f515f711543e17",
+        "android_client_info": {
+          "package_name": "com.customer.weekend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467675705579-d7vtll3p1cvcpsdrqafo9k92lddhvss7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIJ2ejMjytw5qXsZMp4IJ-JOU3i6XBklc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

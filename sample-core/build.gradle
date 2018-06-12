@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile ("com.quickblox:quickblox-android-sdk-messages:3.2.0" )
+
+    compile "com.android.support:design:25.0.1"
+    compile "com.github.johnkil.android-robototextview:robototextview:2.4.3"
+
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://github.com/QuickBlox/quickblox-android-sdk-releases/raw/master/"
+        }
+    }
+}
+

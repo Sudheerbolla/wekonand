@@ -1,0 +1,469 @@
+<resources>
+
+    <!-- Common-->
+    <string name="app_name">ويكند</string>
+    <string name="press_again_to_exit">اضغط مرة أخرى للخروج</string>
+    <string name="lang_id">AR</string>
+    <string name="currency">ريال</string>
+    <string name="no_internet_connection">لايوجد اتصال بالإنترنت</string>
+    <!--Network connection problems. Please, try again later. -->
+
+    <!--Marshmallow permissions -->
+    <string name="action_settings">الإعدادات</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="rationale_camera">هذا التطبيق يحتاج  الوصول إلى الكاميرا الخاصة بك</string>
+    <string name="rationale_location">هذا التطبيق يحتاج  الوصول إلى الموقع الخاص بك لمعرفة موقعك</string>
+    <string name="rationale_sms">هذا التطبيق يحتاج الوصول إلى الرسائل الخاصة بك</string>
+    <string name="rationale_contacts">هذا التطبيق يحتاج الوصول إلى جهات الاتصال الخاصة بك</string>
+    <string name="rationale_external_storage">هذا التطبيق يحتاج الوصول إلى الذاكرة الخاصة بك</string>
+    <string name="rationale_ask_again">قد لا يعمل هذا التطبيق بشكل صحيح دون الأذونات المطلوبة. افتح شاشة إعدادات التطبيق لتعديل أذونات التطبيق</string>
+
+    <!--Topbar-->
+    <string name="skip">تخطي</string>
+
+    <!-- Drawer Menu-->
+    <string name="home">الرئيسية</string>
+    <string name="sign_up_sign_in">التسجيل / تسجيل الدخول</string>
+    <string name="search">بحث</string>
+    <string name="my_favorites">المفضلة</string>
+    <string name="my_bookings">حجوزاتي</string>
+    <string name="my_profile">حسابي</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="terms_conditions"><![CDATA[الشروط والأحكام]]></string>
+    <string name="about_us">من نحن</string>
+    <string name="privacy_policy">سياسة الخصوصية </string>
+    <string name="faqs">الأسئلة الأكثر شيوعا</string>
+    <string name="help">اتصل بنا</string>
+    <string name="logout">خروج</string>
+    <string name="credit">المحفظة</string>
+    <string name="visa_master">بطاقة الائتمان (فيزا / ماستركارد)</string>
+    <string name="balance">الرصيد </string>
+    <string name="book_now_and_pay_later">احجز الآن وادفع لاحقا</string>
+
+    <!--Register with us screen-->
+    <string name="register_with_us">سجل معنا</string>
+    <string name="first_name">الاسم الأول*</string>
+    <string name="last_name">الاسم الثاني</string>
+    <string name="email_address_mandtory">البريد الإلكتروني*</string>
+    <string name="password_mandtory">كلمة المرور*</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password_mandatory">تأكيد كلمة المرور*</string>
+    <string name="mobile_number">رقم الجوال. مثال: 5XXXXXXXX</string>
+    <string name="mobile_number_1">رقم الجوال</string>
+    <string name="enter_other_city">ادخل مدينة أخرى</string>
+    <string name="verification_number_will_be_sent_to_you">سيتم إرسال رمز التحقق لك</string>
+    <string name="i_accept_terms_and_conditions">أقبل الشروط و الأحكام</string>
+    <string name="i_accept">أقبل</string>
+    <string name="terms_and_conditions">الشروط و الأحكام</string>
+    <string name="cancel">إلغاء</string>
+    <string name="register">تسجيل</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+
+    <string name="existing_user">مستخدم سابق؟</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="thank_you_for_filling_up_registration_form">شكرا لانضمامك معنا</string>
+    <string name="your_account_will_be_created_once_">سيتم إنشاء حسابك بعد التحقق من رقم الجوال الخاص بك</string>
+    <string name="verify_mobile_number">التحقق من رقم الجوال</string>
+
+    <string name="verify_mobile_number_l">التحقق من رقم الهاتف الجوال</string>
+    <string name="please_enter_firstname">الرجاء إدخال اسمك الأول</string>
+    <string name="please_enter_lastname">الرجاء إدخال الاسم الثاني</string>
+    <string name="please_enter_email_address">الرجاء إدخال بريدك الإلكتروني</string>
+    <string name="please_enter_valid_email_address">الرجاء إدخال بريد إلكتروني صحيح </string>
+    <string name="please_enter_password">الرجاء إدخال كلمة المرور</string>
+    <string name="password_should_not_be_less_than_8_characters">كلمة المرور يجب أن لاتقل عن 8 أحرف</string>
+    <string name="please_enter_confirm_password">الرجاء تأكيد كلمة المرور</string>
+    <string name="password_and_confirm_password_should_not_mismatch">كلمة المرور وتأكيد كلمة المرور يجب أن يكونوا متطابقين</string>
+    <string name="please_enter_mobile_number">الرجاء إدخال رقم الجوال</string>
+    <string name="please_enter_valid_mobile_number">الرجاء إدخال رقم جوال صحيح </string>
+    <string name="please_accept_terms_and_conditions"><![CDATA[الرجاء قبول الشروط والأحكام]]></string>
+    <string name="you_dont_have_sufficient_fund_in_your_credit_balance">رصيدك لا يكفي!  نأمل تعبئة الرصيد لتتمكن من الحجز
+</string>
+    <string name="are_you_sure_you_want_to_use_your_current_balance_">متأكد أنك تريد استخدام رصيدك الحالي؟</string>
+
+    <!--Login screen-->
+    <string name="login_to_your_account">الدخول إلى حسابك</string>
+    <string name="remember_me">تذكرني </string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="new_user">مستخدم جديد ؟</string>
+    <string name="signup">التسجيل</string>
+    <string name="quick_signup">التسجيل في 5 ثواني</string>
+    <!--<string name="quick_signup">الاستمرار للتسجيل السريع</string>-->
+    <string name="verify_otp_and_continue_booking">الاستمرار للحجز</string>
+
+    <!--Forgot Password screen-->
+    <string name="forgot_password_title">نسيت كلمة المرور</string>
+    <string name="enter_your_registered_mobile_number_here">ادخل رقم جوالك المسجل لدينا</string>
+    <string name="enter_your_registered_email_address_here">ادخل بريدك الإلكتروني المسجل لدينا</string>
+    <string name="please_enter_the_otp_received">الرجاء إدخال رمز التفعيل المرسل</string>
+    <string name="mobile_no">رقم الجوال. مثال: 500123456</string>
+    <string name="mobile_no_1">رقم الجوال</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="resend_otp">إعادة إرسال رمز التفعيل</string>
+    <string name="recover_password_using_email_address">استعادة كلمة المرور عن طريق البريد الإلكتروني</string>
+    <string name="recover_password_using_mobile_number">استعادة كلمة المرور عن طريق الجوال</string>
+    <string name="submit">إرسال</string>
+    <string name="we_have_sent_an_OTP_">لقد تم ارسال رمز التفعيل لرقم الجوال الخاص بك. نرجوا تأكيد الرمز ليتم اكمال تسجيلك معنا.</string>
+    <string name="reset_pasword_link_sent">تم إرسال رابط استعادة كلمة المرور</string>
+    <string name="we_have_sent_a_reset_password_link_">لقد أرسلنا رابط إستعادة كلمة المرور على بريدك الإلكتروني المسجل لدينا</string>
+    <string name="please_click_on_it_to_reset_your_password">الرجاء الضغط على الرابط لاستعادة كلمة المرور</string>
+    <string name="verify">تحقق</string>
+
+    <!--Change Password screen-->
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="update">تحديث</string>
+    <string name="please_enter_old_password">الرجاء إدخال كلمة المرور القديمة</string>
+    <string name="please_enter_correct_old_password">تأكيد كلمة المرور القديمة</string>
+    <string name="please_enter_new_password">الرجاء إدخال كلمة المرور الجديدة</string>
+    <string name="new_password_and_confirm_password_should_not_mismatch">كلمة المرور الجديدة وتأكيدها يجب أن يكونو متطابقين</string>
+    <string name="new_password_should_not_be_less_than_8_characters">كلمة المرور يجب أن لاتقل عن 8 أحرف</string>
+    <string name="old_password_and_new_password_should_not_be_same">كلمة المرور القديمة يجب أ، تكون مختلفة عن كلمة المرور الجديدة</string>
+
+    <!--Edit Profile screen-->
+    <string name="edit_profile">تعديل الحساب الشخصي</string>
+    <string name="select_country">حدد الدولة</string>
+    <string name="select_city">حدد المدينة</string>
+    <string name="price_range">نطاق السعر</string>
+    <string name="we_have_sent_an_OTP_for_verification_on_your_new_mobile_number">لقد أرسلنا رمز التفعيل للتحقق على رقم جوالك الجديد</string>
+    <string name="please_enter_it_here_to_get_verified">الرجاء إدخال رمز التفعيل ليتم التحقق</string>
+    <string name="please_select_city">الرجاء اختيار مدينة</string>
+    <string name="please_select_country">الرجاء اختيار دولة</string>
+    <string name="please_select_country_first">الرجاء اختيار الدولة أولا</string>
+    <string name="auto_login">دخول تلقائي</string>
+
+    <!--Alert-->
+    <string name="allow">موافق</string>
+    <string name="deny">غير موافق</string>
+    <string name="none">لا شيء</string>
+
+    <!--List View Screen-->
+    <string name="list_view">القائمة</string>
+    <string name="search_result">نتيجة البحث</string>
+    <string name="switch_to_list_view">عرض القائمة</string>
+    <string name="switch_to_map_view">عرض الخريطة</string>
+    <string name="chalets">شاليهات</string>
+    <string name="soccer_fields">ملاعب كرة قدم</string>
+    <string name="playgroud">ملاعب</string>
+    <string name="map_view">الخريطة</string>
+    <string name="please_login_first_to_add_or_remove_favorite">الرجاء تسجيل الدخول أولا لإضافة أو إزالة المفضلة</string>
+    <string name="please_login_first_to_submit_report">الرجاء تسجيل الدخول أولا لتقديم تقرير</string>
+    <string name="no_chalets_found">لاتوجد شاليهات</string>
+    <string name="no_soccer_fields_found">لاتوجد ملاعب كرة قدم</string>
+
+    <string name="report_this_property">التبليغ عن هذا العرض</string>
+    <string name="enter_comment">لضمان جودة الخدمة. نرجوا منكم ادخال تفاصيل دقيقة عن سبب تبليغكم لهذه الملكية</string>
+    <string name="please_enter_name">الرجاء ادخال الاسم</string>
+    <string name="please_enter_comment">الرجاء ادخال تفاصيل اضافية عند تبليغكم لأي ملكية.</string>
+    <string name="enter_name">ادخل الاسم</string>
+    <string name="please_select_reason">الرجاء ادخال سبب التبليغ</string>
+
+    <!--Add Your Review Screen-->
+    <string name="add_your_review">إضافة تقييم جديد</string>
+    <string name="rating">التقييم</string>
+    <string name="enter_review">ادخل تقييمك</string>
+    <string name="submit_review">إرسال</string>
+    <string name="please_enter_your_review">الرجاء إدخال رأيك / تقييمك</string>
+    <string name="you_have_no_reviews">لايوجد لديك أي تقييمات</string>
+    <string name="property_owner_response">رد المالك</string>
+    <string name="please_select_rating">الرجاء اختر تقييمك</string>
+    <string name="your_review_is_successfully_accepted_by_owner_you_can_not_update_this_review">تم قبول تعليقك/ رأيك من قبل مالك العقار ,, لايمكنك تحديث هذا التعليق</string>
+
+    <!--Review Screen-->
+    <string name="reviews">اعرض التقييمات</string>
+    <string name="rate_this_property">تقييم هذه الملكية </string>
+
+    <!--Alert Price Range-->
+
+    <!--<string name="reviews_">Reviews </string>-->
+    <string name="sunday_wednesday">الأحد , الأربعاء</string>
+    <string name="thursday">الخميس</string>
+    <string name="friday">الجمعة</string>
+    <string name="saturday">السبت</string>
+    <string name="eid_al_fitr">الأعياد</string>
+    <string name="eid_al_adha">الإجازات</string>
+    <string name="downpayment">الدفعة الأولى (العربون)</string>
+    <string name="down_payment">الدفعة الأولى (العربون)</string>
+    <string name="no_booking_service_available">خدمة الحجز غير متوفرة</string>
+    <!--Same of no_booking_service_available <string name="no_online_payment_available">خدمة الحجز غير متوفرة</string>-->
+
+    <!--Thank You Screen-->
+    <string name="booking_completed">تم الحجز بنجاح</string>
+    <string name="thank_you">شكرا</string>
+    <string name="for_booking_with_us">لحجزك عن طريقنا</string>
+    <!--<string name="your_booking_id_is_we345rt56">Your Booking ID is We345Rt56</string>-->
+    <string name="your_booking_id_is">رقم الحجز هو </string>
+    <string name="cheers">تحيات فريق ويكند</string>
+    <string name="ok_thanks">المتابعة إلى حجوزاتي</string>
+    <string name="booking_cancellation_request">طلب إلغاء حجز</string>
+    <string name="enter_reason">ادخل سبب الإلغاء</string>
+    <string name="send_request">إرسال الطلب</string>
+
+    <!--Notifications Screen-->
+    <string name="notifications">الإشعارات</string>
+    <string name="clear_all">مسح الكل</string>
+    <string name="push_notifications">الإشعارات</string>
+    <string name="you_have_no_notifications">لايوجد لديك إِشعارات</string>
+    <string name="are_you_sure_you_want_to_clear_all_notifications">هل أنت متأكد أنك تريد مسح جميع الإشعارات؟</string>
+    <string name="are_you_sure_you_want_to_delete_this_notifications">هل أنت متأكد أنك تريد حذف هذا الإشعار؟</string>
+
+
+    <!--Change Location Screen  -->
+    <string name="change_location">تغيير الموقع</string>
+    <string name="recenter_my_current_location">اختر موقعي الحالي</string>
+    <string name="enter_city">أدخل مدينة</string>
+    <string name="no_cities_found">لم يتم العثور على المدن</string>
+    <string name="no_cities_match_in_your_search">لايوجد مدن متطابقة مع بحثك</string>
+    <string name="no_properties_match_in_your_search">لايوجد مايطابق بحثك</string>
+
+    <!--Alert Refund Policy-->
+    <string name="refund_policy">سياسة إلغاء الحجز</string>
+    <string name="moderate">معتدل</string>
+
+    <!--Search Screen-->
+    <string name="what_are_you_looking_for">عن ماذا تبحث ؟</string>
+    <string name="title">اسم العرض</string>
+    <string name="enter_title">ادخل اسم الشاليه او الملعب</string>
+    <string name="check_in_date">تاريخ الوصول</string>
+    <string name="dd_mm_yy">DD:MM:YY</string>
+    <string name="location">المنطقة</string>
+    <string name="select_location">اختر المنطقة</string>
+    <string name="neighbourhood">الحي</string>
+    <string name="select_neighbourhood">حدد الحي</string>
+    <string name="size_number_of_players">المساحة ( عدد اللاعبين )</string>
+    <string name="select_size">حدد المساحة</string>
+    <string name="time">الوقت</string>
+    <string name="time_">الوقت:</string>
+    <string name="select_time">حدد الوقت</string>
+    <string name="to">إلى</string>
+    <string name="to_small">إلى</string>
+    <string name="size">المساحة  </string>
+    <string name="from">من</string>
+    <string name="preferred_price">تحديد السعر</string>
+    <string name="max_price">السعر الأعلى</string>
+    <string name="min_price">السعر الأدنى</string>
+    <string name="leasing">نوع التأجير</string>
+    <string name="select_leasing">اختر نوع التأجير</string>
+    <string name="amenities">المرفقات</string>
+    <string name="select_amenities">حدد المرفقات</string>
+    <string name="sections">عدد الأقسام</string>
+    <string name="select_sections">حدد الأقسام</string>
+    <string name="suitable_for">مناسب لــ</string>
+    <string name="search_caps">بحث</string>
+    <string name="please_select_your_location">الرجاء تحديد موقعك</string>
+    <string name="no_location_found">العثور على أي موقع.</string>
+    <string name="no_neighbourhood_found">لم يتم العثور على الحي.</string>
+    <string name="no_neighbourhood_found_for_selected_location">لايوجد شيء بالجوار للموقع المحدد</string>
+    <string name="please_select_location_first">الرجاء تحديد الموقع أولا</string>
+    <string name="select_city_to_start_search">الرجاء اختيار مدينة لنبدأ البحث</string>
+    <string name="booking_end_time_should_be_after_booking_start_time">يجب الحجز نهاية الوقت يكون بعد الحجز وقت البدء</string>
+
+    <!--Confirm Booking Screen-->
+    <string name="confirm_booking">تأكيد الحجز</string>
+    <string name="chalet_name">اسم الشاليه</string>
+    <string name="booked_for">تاريخ الوصول </string>
+    <string name="booked_for_1">حجزت لــ </string>
+    <string name="neighbourhood_city_country">اسم الحي , المدينة , الدولة</string>
+    <string name="booking_name">اسم الحجز *</string>
+    <string name="national_id_no">رقم الهوية</string>
+    <string name="write_a_brief_note_related_to_this_booking">اكتب ملاحظاتك هنا</string>
+    <string name="total_price">السعر الإجمالي</string>
+    <string name="service_charge">رسوم الخدمة</string>
+    <string name="amount_to_pay">المبلغ المطلوب دفعه</string>
+    <string name="remaining_amount_to_pay_to_owner">المبلغ المتبقي دفعه للمالك</string>
+    <string name="apply">تطبيق</string>
+    <string name="continue_str">استمرار</string>
+    <string name="paid">المدفوع</string>
+    <string name="booking_id">رقم الحجز :</string>
+    <string name="booked_on_w345er45">تم الحجز في :</string>
+    <string name="booking_name_naha_jhon">اسم المستأجر:</string>
+    <string name="booking_date_26_07_2016">تاريخ الوصول:</string>
+    <string name="status">الحالة :</string>
+    <string name="discount_code">كود الخصم </string>
+    <string name="remove">إزالة</string>
+    <string name="coupon_applied">تم تفعيل كود الخصم</string>
+    <string name="please_enter_discount_code">الرجاء إدخال كود الخصم</string>
+    <string name="cancelled_on">ألغي في :</string>
+    <string name="cancellation_reason">سبب الإلغاء</string>
+    <string name="insurance_amount_refundable">مبلغ التأمين (مستردة)</string>
+
+    <!--My Bookings Screen-->
+    <string name="please_enter_reason">الرجاء إدخال السبب</string>
+    <string name="are_you_sure_you_want_to_cancel">هل أنت متأكد أنك تريد الإلغاء؟</string>
+    <string name="are_you_sure_you_want_to_logout">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="you_have_no_chalet_bookings">لا يوجد لديك حجوزات للشاليهات</string>
+    <string name="you_have_no_chalets">لايوجد لديك شاليهات</string>
+    <string name="you_have_no_soccer_field">لا يوجد لديك ملاعب كرة القدم</string>
+    <string name="you_have_no_soccer_field_bookings">لايوجد لديك حجوزات للملاعب</string>
+
+    <!--Alert activated now-->
+    <string name="welcome_to">مرحبا بك فـي</string>
+    <string name="you_are_now_an_activated_user_">انت الان مستخدم مفعل ويمكنك الحجز للشاليهات / ملاعب كرة القدم</string>
+    <string name="start_searching_chalets_and_soccer_fields">بدء البحث عن الشاليهات / ملاعب كرة القدم</string>
+    <string name="otp_sent">تم إرسال رمز التفعيل</string>
+    <string name="ok">حسنا</string>
+    <string name="link_to_google_map"><![CDATA[<a href="http://maps.google.com/maps?&z=10&q=%1$s+%2$s">LINK TO GOOGLE MAP</a>]]></string>
+
+    <!--Chalet Bookings Details now-->
+    <string name="booking_details">تفاصيل الحجز</string>
+    <string name="type">النوع :</string>
+    <string name="chalet">شاليه</string>
+    <string name="owner_name">اسم المالك :</string>
+    <string name="owner_contact_number">رقم الاتصال بالمسؤول: </string>
+    <string name="owner_email">البريد الإلكتروني للمالك :</string>
+
+    <string name="check_in">وقت الدخول:</string>
+    <string name="check_out">وقت الخروج:</string>
+
+    <string name="cancellation_policy">سياسة اإلغاء الحجز:</string>
+    <string name="cancel_booking">إلغاء الحجز</string>
+    <string name="cancellation_before">يمكنك إلغاء الحجز</string>
+    <string name="of_check_in_time">قبل موعد الوصول</string>
+    <string name="booking_status">حالة الحجز :</string>
+    <string name="amount_paid">المبلغ المدفوع</string>
+    <string name="refund_policy_for_this_property_is">سياسة إلغاء الحجز </string>
+    <string name="refund_if_cancelled_in">يسترد إذا ألغي في </string>
+    <string name="share_with">شارك مع</string>
+    <string name="available_hint">متوفر</string>
+    <string name="thank_you_for_using_the_weekend_app">شكرا لاستخدامكم تطبيق ويكند</string>
+    <string name="name">الاسم</string>
+    <string name="shared_via"><![CDATA[<a href="https://www.google.co.in/">Weekend App</a>]]></string>
+
+    <!--Soccer Field Bookings Details now-->
+    <string name="soccer_field">ملعب كرة القدم</string>
+    <string name="soccer_field_name">اسم ملعب كرة القدم</string>
+    <string name="we_ended_with_a_time_of_cancellation">عذرا، انتهى وقت إلغاء الحجز</string>
+
+    <!--Chalet Details now-->
+    <string name="chalet_details">تفاصيل الشالية </string>
+    <string name="info">معلومات التواصل</string>
+    <!--<string name="_40_downpayment">40 Downpayment</string>-->
+    <string name="section">عدد الأقسام</string>
+    <string name="sq_mt_">متر مربع</string>
+    <string name="earliest_available_date">أقرب تاريخ متاح:</string>
+    <string name="show_prices">اعرض الأسعار</string>
+    <string name="price_starts_from">السعر يبدأ من </string>
+    <string name="use_discount_coupon">استخدم رمز الكوبون</string>
+    <string name="_to_get">لتحصل على خصم</string>
+    <string name="you_cant_book_this_offer">نأسف و لكن لا يمكنك حجز هذا العرض في نفس اليوم</string>
+
+    <!--Need Confimation-->
+    <string name="discount_on_your_booking">عند حجزك لهذا العرض\n</string>
+
+    <string name="coupon_is_valid_till">الكوبون ساري حتى *</string>
+    <string name="contact_info">معلومات الاتصال</string>
+    <!--<string name="ex_email">soha@gmail.com</string>-->
+    <string name="note_n_please_inform_the_owner_that_you_got_the_number_from_weekend">يرجى إبلاغ المالك أنك حصلت على الرقم من تطبيق ويكند</string>
+    <string name="living_rooms_for_males">مجالس الرجال :</string>
+    <string name="living_rooms_for_females">مجالس النساء :</string>
+    <string name="insurance_amount">مبلغ التأمين </string>
+    <string name="address">العنوان</string>
+    <string name="city_neighbourhood">المدينة , الحي </string>
+    <string name="kitchen">المطبخ :</string>
+    <string name="bedrooms">غرف النوم :</string>
+    <string name="bathrooms">دورات المياه :</string>
+
+    <!--<string name="barbeque">Barbeque</string>-->
+    <!--<string name="playground">Playground</string>-->
+    <!--<string name="small_parties">Small Parties :</string>-->
+    <!--<string name="work_gathering">Work Gathering :</string>-->
+
+    <string name="extra_amenities">المرفقات الإضافية</string>
+    <string name="map_capital">الخريطة</string>
+
+    <string name="book_now">احجز الآن</string>
+    <string name="check_availability">اتصل و احجز</string>
+
+    <!--Edit Profile OTP Confirm Screen-->
+    <string name="verification_is_successful">تم التحقق بنجاح</string>
+
+    <!--Chalet Details Screen-->
+    <string name="field_details">تفاصيل المكان</string>
+    <string name="parking">مواقف سيارات</string>
+
+    <!--<string name="shower">Shower</string>-->
+
+    <!-- My Favorites Screen-->
+    <string name="you_have_no_favorites">لايوجد لديك المفضلة :(</string>
+    <string name="you_have_no_favorite_chalets">لايوجد لديك شاليهات مفضلة :(</string>
+    <string name="you_have_no_favorite_soccer_fields">لايوجد لديك ملاعب كرة قدم مفضلة :(</string>
+    <string name="sort_by">رتب حسب </string>
+    <string name="price_low_to_high">السعر ( الأدنى إلى الأعلى )</string>
+    <string name="nearest_first">الأقرب أولا</string>
+    <string name="price_high_to_low">السعر ( الأعلى إلى الأدنى )</string>
+    <string name="all">الكل</string>
+    <string name="available">للحجز و الدفع آليا</string>
+    <string name="unavailable">للعرض و المشاهدة فقط</string>
+    <string name="cancelled">حجز ملغى</string>
+    <string name="done">تم</string>
+    <string name="relevance">الترتيب الإفتراضي</string>
+
+    <string name="select_date">حدد التاريخ و احجز الآن!</string>
+    <string name="reset_password">اعادة تعيين كلمة المرور</string>
+
+    <!-- Help Screen-->
+    <string name="contact_us">اتصل بنا </string>
+    <string name="message">ادخل استفسارك أو ملاحظاتك هنا</string>
+    <string name="send">إرسال</string>
+    <string name="please_enter_message">الرجاء كتابة رسالة</string>
+
+
+    <string name="map">الخريطة</string>
+    <string name="cant_get_location_please_select_city">لايمكن الحصول على موقعك ,, الرجاء اختيار مدينة للمتابعة</string>
+    <string name="somthing_went_wrong">حدث خطأ. الرجاء معاودة المحاولة في وقت لاحق</string>
+    <string name="you_have_no_cities">لايوجد لديك مدن :(</string>
+    <string name="please_wait_while_we_get_your_location">يرجى الانتظار بينما نحصل على موقعك</string>
+    <string name="location_not_available">الموقع غير متوفر</string>
+    <string name="no_data_found">لاتوجد بيانات :(</string>
+    <string name="other">أخرى</string>
+    <string name="sat">السبت</string>
+    <string name="fri">الجمعة</string>
+    <string name="thu">الخميس</string>
+    <string name="wed">الأربعاء</string>
+    <string name="tue">الثلاثاء</string>
+    <string name="mon">الإثنين</string>
+    <string name="sun">الأحد</string>
+
+    <string name="enable_location_service_to_get_location">الرجاء تمكين خدمة الموقع من الإعدادات للحصول على الموقع بدقة</string>
+    <!--<string name="available_dates">التواريخ المتاحة</string>-->
+    <string name="available_dates">الحجز عن طريق الاتصال فقط</string>
+    <string name="please_enter_booking_name">حدد التاريخ و اتصل للحجز!</string>
+    <string name="token_expired_please_login_to_continue">المهلة انتهت ,, الرجاء تسجيل الدخول للمتابعة</string>
+    <string name="select_time_slot_for_date">الأوقات المتاحة لتاريخ</string>
+    <string name="please_select_booking_date">الرجاء تحديد تاريخ الحجز</string>
+    <string name="please_select_booking_slot">الرجاء تحديد فترة الحجز</string>
+    <string name="fetching_location">جلب الموقع</string>
+    <string name="please_login_to_book_property">الرجاء تسجيل الدخول للحجز</string>
+    <string name="please_login_to_rate_this_property">الرجاء تسجيل الدخول لتقييم هذه الملكية</string>
+    <string name="no_slot_available_for_date">لا توجد فترة زمنية متاحية</string>
+    <string name="soccer_field_details">تفاصيل ملاعب كرة القدم</string>
+    <string name="please_select_date_to_select_time_slot">الرجاء اختيار التاريخ أولا</string>
+
+
+    <string name="please_select_country_code">الرجاء ادخال رمز مفتاح الدولة</string>
+    <string name="please_select_from_time">الرجاء تحديد الوقت بشكل صحيح</string>
+    <string name="minimum_slot_time_is_1_hour">يجب أن لا تقل الفترة الزمنية عن ساعة واحدة. آمل إعادة المحاولة</string>
+    <string name="filter_by">تصفية حسب</string>
+    <string name="online_payment_facility">طرق الحجز</string>
+    <string name="show_with_schedule_available">خاصية معرفة الأيام المتاحة</string>
+    <string name="payment_failed_please_try_again">حدث خطأ عند الدفع. الرجاء إعادة المحاولة</string>
+    <string name="payment_cancelled">تم إلغاء الدفع</string>
+    <string name="payment_failuer">حدث خطأ عند الدفع</string>
+    `
+    <string name="mobile_number_not_updated">تحديث البيانات</string>
+    <string name="mobile_number_updated">تغيير رقم الجوال</string>
+    <string name="loading">جار التحميل</string>
+    <string name="no_specific_insurance_was_added_for_this_property">غير محدد</string>
+    <string name="there_is_no_description">لا يوجد وصف لهذا العرض</string>
+    <string name="book">احجز</string>
+    <string name="booked">محجوز</string>
+
+    <string name="processing_your_payment">معالجة الدفع الخاص بك.</string>
+    <string name="please_wait_">أرجو الإنتظار...</string>
+
+    <string name="hint_ddmmyy"> اختر تاريخ الحجز</string>
+    <string name="hint_mobile_number">5XXXXXXXX</string>
+
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_calender_booking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_233_231_231">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/tv_calender_for_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/space_15"
+                android:text="@string/available_dates"
+                android:textColor="@color/color_105_111_116"
+                android:textSize="@dimen/txt_14"
+                app:font_type="AvenirNextLTPro_Regular_0" />
+
+            <com.weekend.calendar.CalendarView
+                android:id="@+id/cv_calender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginRight="@dimen/space_5" />
+
+            <!-- <LinearLayout
+                 android:id="@+id/llSlots"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:visibility="gone">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:orientation="horizontal">
+
+                     <com.weekend.views.CustomTextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="@string/select_time_slot_for_date" />
+
+                     <com.weekend.views.CustomTextView
+                         android:id="@+id/tv_selected_date"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingLeft="@dimen/space_3"
+                         android:paddingRight="@dimen/space_3"
+                         android:text="16/05/2016" />
+                 </LinearLayout>
+
+                 <com.weekend.views.ExpandableHeightGridView
+                     android:id="@+id/gvSlots"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="@dimen/space_5"
+                     android:numColumns="2" />
+             </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/ll_calender_booking_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                android:background="@color/color_255_255_255"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_15">
+
+                <com.weekend.views.CustomTextView
+                    android:layout_width="@dimen/space_15"
+                    android:layout_height="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color_255_178_140" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_booked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/calender_state_available"
+                    android:padding="@dimen/space_5"
+                    android:text="@string/booked"
+                    android:textColor="@color/color_83_83_83"
+                    android:textSize="@dimen/txt_10"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:layout_width="@dimen/space_15"
+                    android:layout_height="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:background="@color/color_200_225_153" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/calender_state_available"
+                    android:padding="@dimen/space_5"
+                    android:text="@string/available_hint"
+                    android:textColor="@color/color_83_83_83"
+                    android:textSize="@dimen/txt_10"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPhoneCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginRight="@dimen/space_5"
+                android:background="@color/color_255_255_255"
+                android:padding="@dimen/space_10">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icn_phone_call" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tvPhoneCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginTop="2dp"
+                    android:text="966-123456789+"
+                    android:textColor="@color/color_35_120_201"
+                    android:textSize="@dimen/txt_20"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_calender_booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginRight="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/color_255_255_255"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_10">
+
+                <com.weekend.views.CustomEditText
+                    android:id="@+id/edt_calender_booking_name"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:hint="@string/booking_name"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_83_83_83"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/space_5"
+                    android:paddingRight="@dimen/space_5">
+
+                    <com.weekend.views.CustomTextView
+                        android:id="@+id/tv_calender_book"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/btn_blue_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/space_10"
+                        android:text="@string/book"
+                        android:textColor="@color/color_255_255_255"
+                        android:textSize="@dimen/txt_14"
+                        app:font_type="AvenirNextLTPro_Medium" />
+
+                    <com.weekend.views.CustomTextView
+                        android:id="@+id/tv_calender_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/btn_gray_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/space_10"
+                        android:text="@string/cancel"
+                        android:textColor="@color/color_255_255_255"
+                        android:textSize="@dimen/txt_14"
+                        app:font_type="AvenirNextLTPro_Medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cancellation_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginTop="@dimen/space_15"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10">
+
+                    <com.weekend.views.CustomTextView
+                        android:id="@+id/tv_calender_cancellation_policy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/space_3"
+                        android:drawablePadding="@dimen/space_5"
+                        android:drawableRight="@mipmap/img_cancel_policy"
+                        android:gravity="center_vertical"
+                        android:text="@string/cancellation_policy"
+                        android:textColor="@color/color_117_117_117"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/txt_10"
+                        app:font_type="AvenirNextLTPro_Regular_0" />
+
+                    <com.weekend.views.CustomTextView
+                        android:id="@+id/tv_calender_cancellation_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/color_35_120_201"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/txt_10"
+                        app:font_type="AvenirNextLTPro_Regular_0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

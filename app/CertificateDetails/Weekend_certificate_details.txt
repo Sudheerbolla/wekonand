@@ -1,0 +1,7 @@
+Keystore file name: weekend.jks
+keystore password: weekend@123
+Key Alias: weekend
+Key password: weekend@123
+Validity: 50 years
+Organizational Unit: Weekend
+City or Locality: Saudi Arabia

@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_243_243_243"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_confirm_booking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_10"
+                android:visibility="visible">
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_booked_for"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="right"
+                    android:text="@string/booked_for"
+                    android:textColor="@color/color_153_161_168"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/tv_booked_for"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/space_10"
+                    android:textColor="@color/color_35_120_201"
+                    android:textSize="@dimen/txt_16"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tv_booked_for"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/space_5"
+                    android:paddingRight="@dimen/space_5"
+                    android:paddingTop="@dimen/space_5"
+                    android:textColor="@color/color_153_161_168"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tv_date"
+                    android:gravity="right"
+                    android:textColor="@color/color_153_161_168"
+                    android:textSize="@dimen/txt_14"
+                    android:visibility="gone"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_booked_for"
+                    android:layout_toRightOf="@id/tv_date"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/space_5"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingTop="@dimen/space_5"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_15"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_date"
+                    android:layout_toRightOf="@id/tv_time"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_225_225_225" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10">
+
+                <com.weekend.views.CustomEditText
+                    android:id="@+id/edt_booking_name"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:drawableRight="@mipmap/img_booking_name_sc14"
+                    android:hint="@string/booking_name"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomEditText
+                    android:id="@+id/edt_booking_email_address"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:drawableRight="@mipmap/img_email_sc14"
+                    android:hint="@string/email_address_mandtory"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomEditText
+                    android:id="@+id/edt_mobile_number"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:drawableRight="@mipmap/img_mobile_sc14"
+                    android:hint="@string/mobile_number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomEditText
+                    android:id="@+id/edt_national_id_number"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:drawableRight="@mipmap/img_national_id_sc14"
+                    android:hint="@string/national_id_no"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomEditText
+                    android:id="@+id/edt_brief_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_120"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="@drawable/bg_white_corner_5"
+                    android:gravity="right"
+                    android:hint="@string/write_a_brief_note_related_to_this_booking"
+                    android:maxLines="6"
+                    android:overScrollMode="always"
+                    android:padding="@dimen/space_10"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/color_105_111_116"
+                    android:textColorHint="@color/color_153_161_168"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/txt_14"
+                    android:visibility="visible"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/space_3"
+                android:background="@color/color_225_225_225" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_3"
+                android:layout_marginRight="@dimen/space_3"
+                android:padding="@dimen/space_3">
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_cur_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/space_3"
+                    android:paddingRight="@dimen/space_5"
+                    android:text="@string/currency"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cur_total_price"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/space_3"
+                    android:paddingTop="@dimen/space_3"
+                    android:text=""
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_total_price_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/tv_total_price"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_3"
+                    android:text=""
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_insurance_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_3"
+                android:layout_marginRight="@dimen/space_3"
+                android:paddingLeft="@dimen/space_3"
+                android:paddingRight="@dimen/space_3">
+
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_cur_insurance_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/space_3"
+                    android:paddingRight="@dimen/space_5"
+                    android:text="@string/currency"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_insurance_amount_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cur_insurance_amount"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/space_3"
+                    android:paddingTop="@dimen/space_3"
+                    android:text=""
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/tv_insurance_amount_price"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_3"
+                    android:text="@string/insurance_amount_refundable"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_downpayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_3"
+                android:layout_marginRight="@dimen/space_3"
+                android:paddingLeft="@dimen/space_3"
+                android:paddingRight="@dimen/space_3"
+                android:paddingTop="@dimen/space_5">
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_cur_down_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/space_3"
+                    android:paddingRight="@dimen/space_5"
+                    android:text="@string/currency"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_down_payment_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cur_down_payment"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/space_3"
+                    android:paddingTop="@dimen/space_3"
+                    android:text=""
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/tv_down_payment_price"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_3"
+                    android:text="@string/down_payment"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_service_charge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_3"
+                android:layout_marginRight="@dimen/space_3"
+                android:paddingLeft="@dimen/space_3"
+                android:paddingRight="@dimen/space_3"
+                android:paddingTop="@dimen/space_5">
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_cur_service_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/space_3"
+                    android:paddingRight="@dimen/space_5"
+                    android:text="@string/currency"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_service_charge_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cur_service_charge"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/space_3"
+                    android:paddingTop="@dimen/space_3"
+                    android:text=""
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/tv_service_charge_price"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_3"
+                    android:text="@string/service_charge"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_3"
+                android:layout_marginRight="@dimen/space_3"
+                android:paddingLeft="@dimen/space_3"
+                android:paddingRight="@dimen/space_3"
+                android:paddingTop="@dimen/space_5"
+                android:visibility="gone">
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_cur_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/space_3"
+                    android:paddingRight="@dimen/space_5"
+                    android:text="@string/currency"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_discount_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cur_discount"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/space_3"
+                    android:paddingTop="@dimen/space_3"
+                    android:text=""
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/tv_discount_price"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_3"
+                    android:text="@string/discount_code"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/color_225_225_225" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_3"
+                android:layout_marginRight="@dimen/space_3"
+                android:padding="@dimen/space_3">
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_cur_amount_to_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/space_3"
+                    android:paddingRight="@dimen/space_5"
+                    android:text="@string/currency"
+                    android:textColor="@color/color_35_120_201"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_amount_to_pay_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cur_amount_to_pay"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/space_3"
+                    android:paddingTop="@dimen/space_3"
+                    android:text=""
+                    android:textColor="@color/color_35_120_201"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/tv_amount_to_pay_price"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_3"
+                    android:text="@string/amount_to_pay"
+                    android:textColor="@color/color_35_120_201"
+                    android:textSize="@dimen/txt_16"
+                    app:font_type="AvenirNextLTPro_Medium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_3"
+                android:layout_marginRight="@dimen/space_3"
+                android:padding="@dimen/space_3">
+
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_cur_remaining_amount_to_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/space_3"
+                    android:paddingRight="@dimen/space_5"
+                    android:text="@string/currency"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_remaining_amount_to_pay_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cur_remaining_amount_to_pay"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/space_3"
+                    android:paddingTop="@dimen/space_3"
+                    android:text=""
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/tv_remaining_amount_to_pay_price"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_3"
+                    android:text="@string/remaining_amount_to_pay_to_owner"
+                    android:textColor="@color/color_105_111_116"
+                    android:textSize="@dimen/txt_11"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_5">
+
+                <com.weekend.views.CustomEditText
+                    android:id="@+id/edt_coupon_code"
+                    style="@style/EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_weight="0.7"
+                    android:hint="@string/please_enter_discount_code"
+                    android:padding="@dimen/space_5"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_apply"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/btn_blue_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/space_5"
+                    android:text="@string/apply"
+                    android:textColor="@color/color_255_255_255"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:visibility="gone">
+
+                <com.weekend.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/space_5"
+                    android:drawableRight="@mipmap/img_verified_sc23"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_3"
+                    android:text="@string/coupon_applied"
+                    android:textColor="@color/color_63_67_72"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/space_3"
+                    android:text="@string/remove"
+                    android:textColor="@color/color_35_120_201"
+                    android:textSize="@dimen/txt_12"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_225_225_225" />
+
+            <RadioGroup
+                android:id="@+id/rg_payment_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/rb_bookNowPayLater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_16"
+                    android:button="@drawable/rb_gender_selector"
+                    android:drawablePadding="@dimen/space_8"
+                    android:drawableRight="@mipmap/icon_pay_later"
+                    android:paddingRight="@dimen/space_6"
+                    android:checked="true"
+                    android:text="@string/book_now_and_pay_later"
+                    android:textColor="@color/color_105_111_116" />
+
+                <RadioButton
+                    android:id="@+id/rb_visa_master"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_16"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:button="@drawable/rb_gender_selector"
+                    android:drawablePadding="@dimen/space_8"
+                    android:drawableRight="@mipmap/icon_confirm_booking_visa_master"
+                    android:paddingRight="@dimen/space_8"
+                    android:text="@string/visa_master"
+                    android:textColor="@color/color_105_111_116" />
+
+                <RadioButton
+                    android:id="@+id/rb_credits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_16"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:button="@drawable/rb_gender_selector"
+                    android:drawablePadding="@dimen/space_8"
+                    android:drawableRight="@mipmap/icon_confirm_booking_credits"
+                    android:paddingRight="@dimen/space_6"
+                    android:text="@string/balance"
+                    android:textColor="@color/color_105_111_116" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_225_225_225" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_i_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:drawablePadding="@dimen/space_5"
+                    android:drawableRight="@drawable/icon_checkbox_selector"
+                    android:gravity="center_vertical"
+                    android:text="@string/i_accept"
+                    android:textColor="@color/color_35_120_201"
+                    android:textSize="@dimen/txt_11"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_terms_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_i_accept"
+                    android:gravity="center_vertical"
+                    android:text="@string/terms_and_conditions"
+                    android:textColor="@color/color_35_120_201"
+                    android:textSize="@dimen/txt_11"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/space_5"
+                android:paddingRight="@dimen/space_5">
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_continue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_blue_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/space_10"
+                    android:text="@string/continue_str"
+                    android:textColor="@color/color_255_255_255"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_gray_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/space_10"
+                    android:text="@string/cancel"
+                    android:textColor="@color/color_255_255_255"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

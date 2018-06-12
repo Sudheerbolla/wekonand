@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_243_243_243"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager_soccer_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imgPlaceHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/loading_img"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_8"
+                android:padding="@dimen/space_5"
+                android:src="@drawable/btn_favorite_selector" />
+
+            <ImageView
+                android:id="@+id/iv_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/iv_favorite"
+                android:layout_marginRight="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_3"
+                android:src="@mipmap/icon_report"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginLeft="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/space_4"
+                    android:src="@mipmap/img_recommended_sc23"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_verified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_recommend"
+                    android:src="@mipmap/img_verified_sc23"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginLeft="@dimen/space_1"
+                android:layout_marginRight="@dimen/space_10"
+                android:src="@mipmap/img_next_arrow_sc24" />
+
+            <ImageView
+                android:id="@+id/iv_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_toLeftOf="@id/iv_next"
+                android:src="@mipmap/img_previous_arrow_sc24" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_info_soccer_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginEnd="@dimen/space_8"
+            android:layout_marginStart="@dimen/space_8"
+            android:layout_marginTop="@dimen/space_5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_soccer_fields"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/space_8"
+                android:layout_marginRight="@dimen/space_8"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tab_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/playgroud"
+                android:textColor="@color/txt_gray_white_selector"
+                android:textSize="@dimen/txt_15" />
+
+            <RadioButton
+                android:id="@+id/rb_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_marginStart="@dimen/space_8"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/info"
+                android:textColor="@color/txt_gray_white_selector"
+                android:textSize="@dimen/txt_15" />
+        </RadioGroup>
+
+        <!-- <RadioGroup
+             android:id="@+id/rg_info_soccer_fields"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/space_40"
+             android:background="@color/color_255_255_255"
+             android:orientation="horizontal">
+
+             <RadioButton
+                 android:id="@+id/rb_soccer_fields"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center"
+                 android:layout_weight="1"
+                 android:button="@null"
+                 android:checked="true"
+                 android:gravity="center"
+                 android:text="@string/soccer_fields"
+                 android:textColor="@color/txt_gray_blue_selector"
+                 android:textSize="@dimen/txt_15" />
+
+             <RadioButton
+                 android:id="@+id/rb_info"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center"
+                 android:layout_weight="1"
+                 android:button="@null"
+                 android:checked="false"
+                 android:gravity="center"
+                 android:text="@string/info"
+                 android:textColor="@color/txt_gray_blue_selector"
+                 android:textSize="@dimen/txt_15" />
+         </RadioGroup>
+
+         <LinearLayout
+             android:id="@+id/ll_tab_selection"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/space_2"
+             android:layout_below="@+id/rg_info_soccer_fields"
+             android:layout_gravity="bottom"
+             android:background="@color/color_255_255_255"
+             android:orientation="horizontal">
+
+             <View
+                 android:id="@+id/v_soccer_fields"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:background="@color/color_35_120_201" />
+
+             <View
+                 android:id="@+id/v_info"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:background="@color/color_35_120_201"
+                 android:visibility="invisible" />
+         </LinearLayout>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_soccer_fields"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space_10"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_no_soccer_fields"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_tab_selection"
+            android:gravity="center"
+            android:text="@string/you_have_no_soccer_field"
+            android:textColor="@color/color_105_111_116"
+            android:textSize="@dimen/txt_15"
+            android:visibility="gone"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+        <include
+            android:id="@+id/sv_row_chalet_details_info"
+            layout="@layout/inflate_chalet_detail_info" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_full_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpFullImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_full_image_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/black"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15"
+            android:paddingTop="@dimen/space_10"
+            android:text="DONE"
+            android:textColor="@color/color_255_255_255"
+            android:textSize="@dimen/txt_16"
+            app:font_type="AvenirNextLTPro_Bold_0" />
+    </RelativeLayout>
+</RelativeLayout>

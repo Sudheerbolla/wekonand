@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_243_243_243"
+    android:orientation="vertical">
+
+    <!-- date toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_171_201_100"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:paddingTop="@dimen/space_10">
+
+        <ImageView
+            android:id="@+id/iv_calendar_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_5"
+            android:src="@mipmap/img_calendar_reverse" />
+
+        <!-- date title -->
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_current_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/color_255_255_255"
+            android:textSize="@dimen/txt_16"
+            app:font_type="AvenirNextLTPro_Demi_0" />
+
+        <ImageView
+            android:id="@+id/iv_calendar_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_5"
+            android:src="@mipmap/img_calendar_back" />
+
+    </LinearLayout>
+
+    <!-- days header -->
+    <LinearLayout
+        android:id="@+id/ll_calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_32"
+        android:background="@color/color_255_255_255"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <com.weekend.views.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/sun"
+            android:textColor="@color/color_62_69_76"
+            android:textSize="@dimen/txt_10"
+            app:font_type="AvenirNextLTPro_Demi_0" />
+
+        <com.weekend.views.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/mon"
+            android:textColor="@color/color_62_69_76"
+            android:textSize="@dimen/txt_10"
+            app:font_type="AvenirNextLTPro_Demi_0" />
+
+        <com.weekend.views.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/tue"
+            android:textColor="@color/color_62_69_76"
+            android:textSize="@dimen/txt_10"
+            app:font_type="AvenirNextLTPro_Demi_0" />
+
+        <com.weekend.views.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/wed"
+            android:textColor="@color/color_62_69_76"
+            android:textSize="@dimen/txt_10"
+            app:font_type="AvenirNextLTPro_Demi_0" />
+
+        <com.weekend.views.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/thu"
+            android:textColor="@color/color_62_69_76"
+            android:textSize="@dimen/txt_10"
+            app:font_type="AvenirNextLTPro_Demi_0" />
+
+        <com.weekend.views.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/fri"
+            android:textColor="@color/color_62_69_76"
+            android:textSize="@dimen/txt_10"
+            app:font_type="AvenirNextLTPro_Demi_0" />
+
+        <com.weekend.views.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/sat"
+            android:textColor="@color/color_62_69_76"
+            android:textSize="@dimen/txt_10"
+            app:font_type="AvenirNextLTPro_Demi_0" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_calender"
+        android:layout_width="match_parent"
+        android:layout_height="310dp" />
+
+    <LinearLayout
+        android:id="@+id/llSlots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space_5"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/tv_selected_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_3"
+                android:paddingRight="@dimen/space_3" />
+        </LinearLayout>
+
+        <com.weekend.views.ExpandableHeightGridView
+            android:id="@+id/gvSlots"
+            android:layout_width="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:verticalSpacing="@dimen/space_4"
+            android:horizontalSpacing="@dimen/space_4"
+            android:layout_margin="@dimen/space_2"
+            android:layoutDirection="rtl"
+            android:numColumns="2" />
+    </LinearLayout>
+</LinearLayout>

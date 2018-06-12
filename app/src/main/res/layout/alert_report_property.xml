@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_white_shaded_corner_5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.weekend.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="@dimen/space_10"
+            android:text="@string/report_this_property"
+            android:textColor="@color/color_105_111_116"
+            android:textSize="@dimen/txt_14"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_15"
+            android:src="@mipmap/icon_close" />
+    </RelativeLayout>
+
+    <com.weekend.views.CustomEditText
+        android:id="@+id/edt_name"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:drawableRight="@mipmap/img_booking_name_sc14"
+        android:hint="@string/enter_name"
+        android:inputType="textPersonName"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:background="@drawable/bg_white_corner_5">
+
+        <ImageView
+            android:id="@+id/iv_drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_15"
+            android:src="@mipmap/img_dropdown" />
+
+        <Spinner
+            android:id="@+id/spinner_report"
+            style="@style/style_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mobile_code_height"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/space_1"
+            android:layout_toRightOf="@id/iv_drop"
+            android:background="@color/color_255_255_255"
+            android:dropDownWidth="220dp"
+            android:gravity="right"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/color_105_111_116"
+            android:textSize="@dimen/txt_14" />
+    </RelativeLayout>
+
+    <com.weekend.views.CustomEditText
+        android:id="@+id/edt_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@drawable/bg_white_corner_5"
+        android:gravity="right"
+        android:hint="@string/enter_comment"
+        android:maxLines="6"
+        android:padding="@dimen/space_10"
+        android:textColor="@color/color_105_111_116"
+        android:textColorHint="@color/color_153_161_168"
+        android:textDirection="rtl"
+        android:textSize="@dimen/txt_14"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/tv_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/btn_blue_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_30"
+        android:paddingRight="@dimen/space_30"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/submit"
+        android:textColor="@color/color_255_255_255"
+        android:textDirection="rtl"
+        android:textSize="@dimen/txt_14"
+        app:font_type="AvenirNextLTPro_Medium" />
+
+</LinearLayout>

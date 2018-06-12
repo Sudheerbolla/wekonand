@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_243_243_243"
+    android:orientation="vertical">
+
+    <com.weekend.views.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:padding="@dimen/space_10"
+        android:text="@string/rating"
+        android:textColor="@color/color_63_67_72"
+        android:textSize="@dimen/txt_14"
+        app:font_type="AvenirNextLTPro_Demi_0" />
+
+    <RatingBar
+        android:id="@+id/rb_review"
+        style="@style/CustomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/space_5"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <com.weekend.views.CustomEditText
+        android:id="@+id/edt_enter_review"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:layout_margin="@dimen/space_10"
+        android:background="@drawable/bg_white_corner_5"
+        android:gravity="right"
+        android:hint="@string/enter_review"
+        android:maxLines="6"
+        android:padding="@dimen/space_10"
+        android:textColor="@color/color_105_111_116"
+        android:textColorHint="@color/color_153_161_168"
+        android:textSize="@dimen/txt_14"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/tv_submit_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_blue_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_30"
+        android:paddingRight="@dimen/space_30"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/submit_review"
+        android:textColor="@color/color_255_255_255"
+        android:textSize="@dimen/txt_14"
+        app:font_type="AvenirNextLTPro_Medium" />
+</LinearLayout>

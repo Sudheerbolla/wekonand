@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_243_243_243"
+    tools:context="com.weekend.fragments.ListViewFragment">
+
+    <RadioGroup
+        android:id="@+id/rg_soccer_chalet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:background="@color/color_255_255_255"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_chalet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/chalets"
+            android:textColor="@color/txt_gray_blue_selector"
+            android:textSize="@dimen/txt_14" />
+
+        <RadioButton
+            android:id="@+id/rb_soccer_fields"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/soccer_fields"
+            android:textColor="@color/txt_gray_blue_selector"
+            android:textSize="@dimen/txt_14" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_tab_selection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_2"
+        android:layout_below="@+id/rg_soccer_chalet"
+        android:layout_gravity="bottom"
+        android:background="@color/color_255_255_255"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v_chalets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_35_120_201" />
+
+        <View
+            android:id="@+id/v_soccer_fields"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_35_120_201"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/calender_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@android:color/white"
+        android:layout_below="@+id/ll_tab_selection">
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_15"
+            android:src="@mipmap/icon_close" />
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_calender"
+            style="@style/EditText"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/space_10"
+            android:drawableRight="@mipmap/icon_calendar"
+            android:textDirection="rtl"
+            android:hint="@string/hint_ddmmyy"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_toRightOf="@+id/iv_close"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_254_218_0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/space_5"
+            android:drawableRight="@mipmap/btn_map_btm"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_10"
+            android:text="@string/switch_to_map_view"
+            android:textColor="@color/color_63_67_72"
+            android:textSize="@dimen/txt_14"
+            app:font_type="AvenirNextLTPro_Medium" />
+    </LinearLayout>
+
+    <com.weekend.views.CustomRecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottombar"
+        android:layout_below="@id/calender_search"
+        android:overScrollMode="never"
+        android:paddingTop="@dimen/space_5"
+        android:scrollbars="none"
+        android:visibility="gone"
+        app:pagination="true" />
+
+    <FrameLayout
+        android:id="@+id/fl_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottombar"
+        android:visibility="gone">
+
+        <!--<com.google.android.gms.maps.MapView
+            android:id="@+id/mv_google_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+        <fragment
+            android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_tab_selection"
+        android:gravity="center"
+        android:text="@string/no_chalets_found"
+        android:textColor="@color/color_105_111_116"
+        android:textSize="@dimen/txt_14"
+        android:visibility="gone"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+
+    <include
+        android:id="@+id/cv_filter"
+        layout="@layout/inflate_filter_layout"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/cv_sort"
+        layout="@layout/inflate_sorting_layout"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/rl_map_item"
+        layout="@layout/inflate_map_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</RelativeLayout>

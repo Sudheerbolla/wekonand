@@ -1,0 +1,527 @@
+<resources>
+
+    <!-- Common-->
+    <string name="app_name">Weekend</string>
+    <string name="press_again_to_exit">Press again to exit</string>
+    <string name="lang_id">EN</string>
+    <string name="currency">ريال</string>
+    <string name="no_internet_connection">Unable to connect to the Internet</string>
+    <!--Network connection problems. Please, try again later. -->
+
+    <!--Marshmallow permissions -->
+    <string name="action_settings">Settings</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="rationale_camera">This app needs access to your camera so you can take pictures.</string>
+    <string name="rationale_location">This app needs access to your location to know where you
+        are.
+    </string>
+    <string name="rationale_sms">This app needs access to your sms to read all your great
+        messages.
+    </string>
+    <string name="rationale_contacts">This app needs access to your contacts so you can contact
+        them.
+    </string>
+    <string name="rationale_external_storage">This app needs access to your external storage to read
+        and write.
+    </string>
+    <string name="rationale_ask_again">This app may not work correctly without the requested
+        permissions. Open the app settings screen to modify app permissions.
+    </string>
+
+    <!--Topbar-->
+    <string name="skip">SKIP</string>
+
+    <!-- Drawer Menu-->
+    <string name="home">Home</string>
+    <string name="sign_up_sign_in">Sign up / Sign In</string>
+    <string name="search">Search</string>
+    <string name="my_favorites">My Favorites</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="my_profile">My Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="faqs">FAQs</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="credit">Credit</string>
+    <string name="visa_master">Visa Master</string>
+    <string name="balance">Balance</string>
+    <string name="book_now_and_pay_later">Book Now and pay later</string>
+
+    <!--Register with us screen-->
+    <string name="register_with_us">Register with Us</string>
+    <string name="first_name">First Name*</string>
+    <string name="last_name">Last Name*</string>
+    <string name="email_address_mandtory">Email Address*</string>
+    <string name="password_mandtory">Password*</string>
+    <string name="password">Password</string>
+    <string name="confirm_password_mandatory">Confirm Password*</string>
+    <string name="mobile_number">Mobile Number*</string>
+    <string name="enter_other_city">Enter Other City</string>
+    <string name="verification_number_will_be_sent_to_you">Verification Number will be sent to
+        you.
+    </string>
+    <string name="i_accept_terms_and_conditions">I accept terms and conditions</string>
+    <string name="i_accept">I accept</string>
+    <string name="terms_and_conditions">terms and conditions</string>
+    <string name="cancel">CANCEL</string>
+    <string name="register">REGISTER</string>
+
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="existing_user">Existing User?</string>
+    <string name="login">LOGIN</string>
+    <string name="thank_you_for_filling_up_registration_form">Thank You for filling up registration
+        form
+    </string>
+    <string name="your_account_will_be_created_once_">Your account will be created once you verify
+        your Mobile No. with us
+    </string>
+    <string name="verify_mobile_number">VERIFY MOBILE NUMBER</string>
+
+    <string name="verify_mobile_number_l">Verify Mobile Number</string>
+    <string name="please_enter_firstname">Please enter firstname</string>
+    <string name="please_enter_lastname">Please enter lastname</string>
+    <string name="please_enter_email_address">Please enter email address</string>
+    <string name="please_enter_valid_email_address">Please enter valid email address</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="password_should_not_be_less_than_8_characters">Password should not be less than 8
+        characters
+    </string>
+    <string name="please_enter_confirm_password">Please enter confirm password</string>
+    <string name="password_and_confirm_password_should_not_mismatch">Password and confirm password
+        should not mismatch
+    </string>
+    <string name="please_enter_mobile_number">Please enter mobile number</string>
+    <string name="please_enter_valid_mobile_number">Please enter valid mobile number</string>
+    <string name="please_accept_terms_and_conditions">
+        <![CDATA[Please accept terms & conditions]]></string>
+    <string name="you_dont_have_sufficient_fund_in_your_credit_balance">You dont have sufficient fund in your credit balance
+    </string>
+    <string name="are_you_sure_you_want_to_use_your_current_balance_">Are you sure you want to use your current balance</string>
+
+    <!--Login screen-->
+    <string name="login_to_your_account">Login to your Account</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="new_user">New User?</string>
+    <string name="signup">SIGNUP</string>
+    <string name="quick_signup">QUICK SIGNUP</string>
+    <string name="verify_otp_and_continue_booking">Verify OTP and Continue Booking</string>
+
+    <!--Forgot Password screen-->
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="enter_your_registered_mobile_number_here">Enter your registered Mobile Number
+        here
+    </string>
+    <string name="enter_your_registered_email_address_here">Enter your registered Email Address
+        here
+    </string>
+    <string name="please_enter_the_otp_received">Please enter the OTP received</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="email_address">Email Address</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="recover_password_using_email_address">Recover password using Email Address
+    </string>
+    <string name="recover_password_using_mobile_number">Recover password using Mobile Number
+    </string>
+    <string name="submit">SUBMIT</string>
+    <string name="we_have_sent_an_OTP_">We have sent an OTP on your registered mobile number. Please
+        enter it here to reset your password.
+    </string>
+    <string name="reset_pasword_link_sent">Reset Pasword Link Sent</string>
+    <string name="we_have_sent_a_reset_password_link_">We have sent a reset password link to your
+        registered Email id.
+    </string>
+    <string name="please_click_on_it_to_reset_your_password">Please click on it to reset your
+        password
+    </string>
+    <string name="verify">VERIFY</string>
+
+    <!--Change Password screen-->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="update">UPDATE</string>
+    <string name="please_enter_old_password">Please enter old password</string>
+    <string name="please_enter_correct_old_password">Please enter correct old password</string>
+    <string name="please_enter_new_password">Please enter new password</string>
+    <string name="new_password_and_confirm_password_should_not_mismatch">New password and confirm
+        password should not mismatch
+    </string>
+    <string name="new_password_should_not_be_less_than_8_characters">New password should not be less
+        than 8 characters
+    </string>
+    <string name="old_password_and_new_password_should_not_be_same">Old password and new password
+        should not be same
+    </string>
+
+    <!--Edit Profile screen-->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_city">Select City</string>
+    <string name="price_range">Price Range</string>
+    <string name="we_have_sent_an_OTP_for_verification_on_your_new_mobile_number">We have sent an
+        OTP for verification on your new Mobile Number.
+    </string>
+    <string name="please_enter_it_here_to_get_verified">Please enter it here to get verified
+    </string>
+    <string name="please_select_city">Please select city</string>
+    <string name="please_select_country">Please select country</string>
+    <string name="please_select_country_first">Please select country first</string>
+    <string name="auto_login">Auto Login</string>
+
+    <!--Alert-->
+    <string name="allow">ALLOW</string>
+    <string name="deny">DENY</string>
+    <string name="none">None</string>
+
+    <!--List View Screen-->
+    <string name="list_view">List View</string>
+    <string name="search_result">Search Result</string>
+    <string name="switch_to_list_view">Switch to List View</string>
+    <string name="switch_to_map_view">Switch to Map View</string>
+    <string name="chalets">Chalets</string>
+    <string name="playgroud">ملاعب</string>
+    <string name="soccer_fields">Soccer Fields</string>
+    <string name="map_view">Map View</string>
+    <string name="please_login_first_to_add_or_remove_favorite">Please login first to add or remove
+        favorite
+    </string>
+    <string name="please_login_first_to_submit_report">Please login first to submit report</string>
+    <string name="no_chalets_found">No chalets found :(</string>
+    <string name="no_soccer_fields_found">No soccer fields found :(</string>
+    <string name="report_this_property">Report this Property</string>
+    <string name="enter_comment">Enter Comment</string>
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_comment">Please enter comment</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="please_select_reason">Please select a reason</string>
+
+    <!--Add Your Review Screen-->
+    <string name="add_your_review">Add Your Review</string>
+    <string name="rating">Rating</string>
+    <string name="enter_review">Enter Review</string>
+    <string name="submit_review">SUBMIT REVIEW</string>
+    <string name="please_enter_your_review">Please enter your review</string>
+    <string name="you_have_no_reviews">You have no reviews :(</string>
+    <string name="property_owner_response">Property Owner Response</string>
+    <string name="please_select_rating">Please Select Rating</string>
+    <string name="your_review_is_successfully_accepted_by_owner_you_can_not_update_this_review">Your
+        review is successfully accepted by property owner. You can\'t update this review
+    </string>
+
+    <!--Review Screen-->
+    <string name="reviews">Reviews</string>
+    <string name="rate_this_property">RATE THIS PROPERTY</string>
+
+    <!--Alert Price Range-->
+    <string name="reviews_">Reviews</string>
+    <string name="sunday_wednesday">Sunday, Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="eid_al_fitr">Eid al Fitr</string>
+    <string name="eid_al_adha">Eid al Adha</string>
+    <string name="downpayment">Downpayment</string>
+    <string name="down_payment">Down Payment</string>
+    <string name="no_booking_service_available">No Booking Service Available</string>
+
+    <!--Thank You Screen-->
+    <string name="booking_completed">Booking Completed</string>
+    <string name="thank_you">Thank You</string>
+    <string name="for_booking_with_us">for Booking with us.</string>
+    <string name="your_booking_id_is_we345rt56">Your Booking ID is We345Rt56</string>
+    <string name="your_booking_id_is">Your Booking ID is</string>
+    <string name="cheers">Cheers!</string>
+    <string name="ok_thanks">OK, THANKS</string>
+    <string name="booking_cancellation_request">Booking Cancellation Request</string>
+    <string name="enter_reason">Enter Reason</string>
+    <string name="send_request">SEND REQUEST</string>
+
+    <!--Notifications Screen-->
+    <string name="notifications">Notifications</string>
+    <string name="clear_all">Clear All</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="you_have_no_notifications">You have no notifications :(</string>
+    <string name="are_you_sure_you_want_to_clear_all_notifications">Are you sure you want to clear
+        all notifications?
+    </string>
+    <string name="are_you_sure_you_want_to_delete_this_notifications">Are you sure you want to
+        delete this notifications?
+    </string>
+
+
+    <!--Change Location Screen  -->
+    <string name="change_location">Change Location</string>
+    <string name="recenter_my_current_location">Recentre my current location</string>
+    <string name="enter_city">Enter City</string>
+    <string name="no_cities_found">No cities found :(</string>
+    <string name="no_cities_match_in_your_search">No cities matched in your search :(</string>
+    <string name="no_properties_match_in_your_search">No properties matched in your search :(
+    </string>
+
+    <!--Alert Refund Policy-->
+    <string name="refund_policy">Refund Policy</string>
+    <string name="moderate">Moderate</string>
+
+    <!--Search Screen-->
+    <string name="what_are_you_looking_for">What are you looking for?</string>
+    <string name="title">Title</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="check_in_date">Check In Date</string>
+    <string name="dd_mm_yy">DD : MM : YY</string>
+    <string name="location">Location</string>
+    <string name="select_location">Select Location</string>
+    <string name="neighbourhood">Neighbourhood</string>
+    <string name="select_neighbourhood">Select Neighbourhood</string>
+    <string name="size_number_of_players">Size (Number of Players)</string>
+    <string name="select_size">Select Size</string>
+    <string name="time">Time</string>
+    <string name="time_">Time :</string>
+    <string name="select_time">Select Time</string>
+    <string name="to">To</string>
+    <string name="to_small">to</string>
+    <string name="size">Size</string>
+    <string name="from">From</string>
+    <string name="preferred_price">Preferred Price</string>
+    <string name="max_price">Max. Price</string>
+    <string name="min_price">Min. Price</string>
+    <string name="leasing">Leasing</string>
+    <string name="select_leasing">Select Leasing</string>
+    <string name="amenities">Amenities</string>
+    <string name="select_amenities">Select Amenities</string>
+    <string name="sections">Sections</string>
+    <string name="select_sections">Select Sections</string>
+    <string name="suitable_for">Suitable for</string>
+    <string name="search_caps">SEARCH</string>
+    <string name="please_select_your_location">Please select your location.</string>
+    <string name="no_location_found">No location found.</string>
+    <string name="no_neighbourhood_found">No neighbourhood found.</string>
+    <string name="no_neighbourhood_found_for_selected_location">No neighbourhood found for selected
+        location.
+    </string>
+    <string name="please_select_location_first">Please select location first</string>
+    <string name="select_city_to_start_search">Please select a city to start search</string>
+    <string name="booking_end_time_should_be_after_booking_start_time">Booking End Time should be after booking start time</string>
+
+    <!--Confirm Booking Screen-->
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="chalet_name">Chalet Name</string>
+    <string name="booked_for">Booked for</string>
+    <string name="neighbourhood_city_country">Neighbourhood,City,Country</string>
+    <string name="booking_name">Booking Name*</string>
+    <string name="national_id_no">National ID No.</string>
+    <string name="write_a_brief_note_related_to_this_booking">Write a brief note related to this
+        booking
+    </string>
+    <string name="total_price">Total Price</string>
+    <string name="service_charge">Service Charge</string>
+    <string name="amount_to_pay">Amount to Pay</string>
+    <string name="remaining_amount_to_pay_to_owner">Remaining amount to pay to owner</string>
+    <string name="apply">APPLY</string>
+    <string name="continue_str">CONTINUE</string>
+    <string name="paid">Paid</string>
+    <string name="booking_id">Booking ID :</string>
+    <string name="booked_on_w345er45">Booked On :</string>
+    <string name="booking_name_naha_jhon">Booking Name :</string>
+    <string name="booking_date_26_07_2016">Booking Date :</string>
+    <string name="status">Status :</string>
+    <string name="discount_code">Discount Code</string>
+    <string name="remove">Remove</string>
+    <string name="coupon_applied">Coupon Applied</string>
+    <string name="please_enter_discount_code">Please enter discount code</string>
+    <string name="cancelled_on">Cancelled On :</string>
+    <string name="cancellation_reason">Cancellation Reason</string>
+    <string name="insurance_amount_refundable">Insurance amount (Refundable)</string>
+
+    <!--My Bookings Screen-->
+    <string name="please_enter_reason">Please enter reason</string>
+    <string name="are_you_sure_you_want_to_cancel">Are you sure you want to cancel?</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="you_have_no_chalet_bookings">You have no chalet bookings :(</string>
+    <string name="you_have_no_chalets">You have no chalets :(</string>
+    <string name="you_have_no_soccer_field">You have no soccer fields :(</string>
+    <string name="you_have_no_soccer_field_bookings">You have no soccer field bookings :(</string>
+
+    <!--Alert activated now-->
+    <string name="welcome_to">Welcome to</string>
+    <string name="you_are_now_an_activated_user_">You are now an activated user and can book for
+        properties
+    </string>
+    <string name="start_searching_chalets_and_soccer_fields">START SEARCHING CHALETS AND SOCCER
+        FIELDS
+    </string>
+    <string name="otp_sent">OTP Sent</string>
+    <string name="ok">OK</string>
+
+    <!--Chalet Bookings Details now-->
+    <string name="booking_details">Bookings Details</string>
+    <string name="type">Type :</string>
+    <string name="chalet">Chalet</string>
+    <string name="owner_name">Owner Name :</string>
+    <string name="owner_contact_number">Owner Contact Number :</string>
+    <string name="owner_email">Owner Email :</string>
+    <string name="check_in">Check In :</string>
+    <string name="check_out">Check Out :</string>
+    <string name="cancellation_policy">Cancellation Policy :</string>
+    <string name="cancel_booking">CANCEL BOOKING</string>
+    <string name="cancellation_before">Cancellation before</string>
+    <string name="of_check_in_time">of Check in Time</string>
+    <string name="booking_status">Booking Status :</string>
+    <string name="amount_paid">Amount Paid</string>
+    <string name="refund_policy_for_this_property_is">Refund policy for this property is</string>
+    <string name="refund_if_cancelled_in">refund if cancelled in</string>
+    <string name="share_with">Share with</string>
+    <string name="available_hint">Available</string>
+    <string name="thank_you_for_using_the_weekend_app">شكرا لاستخدامكم تطبيق ويكند</string>
+    <string name="name">الاسم</string>
+    <string name="shared_via"><![CDATA[<a href="https://www.google.co.in/">Weekend App</a>]]></string>
+
+    <!--Soccer Field Bookings Details now-->
+    <string name="soccer_field">Soccer Field</string>
+    <string name="soccer_field_name">Soccer Field Name</string>
+    <string name="we_ended_with_a_time_of_cancellation">We ended with the cancellation time</string>
+
+    <!--Chalet Details now-->
+    <string name="chalet_details">Chalet Details</string>
+    <string name="info">Info</string>
+    <string name="_40_downpayment">40 Downpayment</string>
+    <string name="you_cant_book_this_offer">You can\'t book this offer</string>
+    <string name="section">Section</string>
+    <string name="sq_mt_">Sq. Mts.</string>
+    <string name="earliest_available_date">Earliest Available Date :</string>
+    <string name="show_prices">SHOW PRICES</string>
+    <string name="price_starts_from">Price Starts From</string>
+    <string name="use_discount_coupon">Use Discount Coupon</string>
+    <string name="_to_get">to get</string>
+    <string name="discount_on_your_booking">\n discount on your booking</string>
+    <string name="coupon_is_valid_till">*Coupon is valid till</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="ex_email">soha@gmail.com</string>
+    <string name="note_n_please_inform_the_owner_that_you_got_the_number_from_weekend">Note \n
+        Please inform the owner that you got the number from Weekend
+    </string>
+    <string name="living_rooms_for_males">Living Rooms for Males :</string>
+    <string name="living_rooms_for_females">Living Rooms for Females :</string>
+    <string name="insurance_amount">Insurance Amount</string>
+    <string name="address">Address</string>
+    <string name="city_neighbourhood">City,Neighbourhood</string>
+    <string name="kitchen">Kitchen :</string>
+    <string name="bedrooms">Bedrooms :</string>
+    <string name="bathrooms">Bathrooms :</string>
+    <string name="barbeque">Barbeque</string>
+    <string name="playground">Playground</string>
+    <string name="small_parties">Small Parties :</string>
+    <string name="work_gathering">Work Gathering :</string>
+    <string name="extra_amenities">Extra Amenities</string>
+    <string name="map_capital">MAP</string>
+
+    <string name="book_now">BOOK NOW</string>
+    <string name="check_availability">CHECK AVAILABILITY</string>
+
+    <!--Edit Profile OTP Confirm Screen-->
+    <string name="verification_is_successful">Verification is successful</string>
+
+    <!--Chalet Details Screen-->
+    <string name="field_details">Field Details</string>
+    <string name="parking">Parking</string>
+    <string name="shower">Shower</string>
+
+    <!-- My Favorites Screen-->
+    <string name="you_have_no_favorites">You have no favorites :(</string>
+    <string name="you_have_no_favorite_chalets">You have no favorite chalets :(</string>
+    <string name="you_have_no_favorite_soccer_fields">You have no favorite soccer fields :(</string>
+    <string name="sort_by">Sort By</string>
+    <string name="price_low_to_high">Price (Low to High)</string>
+    <string name="nearest_first">Nearest First</string>
+    <string name="price_high_to_low">Price (High to Low)</string>
+    <string name="all">All</string>
+    <string name="available">Available</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="done">DONE</string>
+    <string name="relevance">Relevance</string>
+
+    <string name="select_date">Select date</string>
+    <string name="reset_password">Reset Password</string>
+
+    <!-- Help Screen-->
+    <string name="contact_us">Contact Us</string>
+    <string name="message">Message*</string>
+    <string name="send">SEND</string>
+    <string name="please_enter_message">Please enter message</string>
+
+
+    <string name="map">Map</string>
+    <string name="cant_get_location_please_select_city">Can\'t get your location. Please select your
+        city to continue
+    </string>
+    <string name="somthing_went_wrong">Something went wrong. Please try again later.</string>
+    <string name="you_have_no_cities">You have no cities :(</string>
+    <string name="please_wait_while_we_get_your_location">Please wait while we get your location
+    </string>
+    <string name="location_not_available">Location not available</string>
+    <string name="no_data_found">No data found :(</string>
+    <string name="other">Other</string>
+    <string name="sat">SAT</string>
+    <string name="fri">FRI</string>
+    <string name="thu">THU</string>
+    <string name="wed">WED</string>
+    <string name="tue">TUE</string>
+    <string name="mon">MON</string>
+    <string name="sun">SUN</string>
+
+    <string name="enable_location_service_to_get_location">Enable location service from Settings to
+        get accurate location.
+    </string>
+    <string name="available_dates">Available Dates</string>
+    <string name="please_enter_booking_name">Please enter booking name</string>
+    <string name="token_expired_please_login_to_continue">Token expired. Please login to continue
+    </string>
+    <string name="select_time_slot_for_date">Select time slot for date</string>
+    <string name="please_select_booking_date">Please select booking date</string>
+    <string name="please_select_booking_slot">Please select booking slot</string>
+    <string name="fetching_location">Fetching location…</string>
+    <string name="please_login_to_book_property">Please login to book property</string>
+    <string name="please_login_to_rate_this_property">Please login to rate this property</string>
+    <string name="no_slot_available_for_date">No slot available for date</string>
+    <string name="soccer_field_details">Soccer Field Details</string>
+    <string name="please_select_date_to_select_time_slot">Please select date to select time slot
+    </string>
+    <string name="please_select_country_code">Please select country code</string>
+    <string name="please_select_from_time">Please select from time</string>
+    <string name="minimum_slot_time_is_1_hour">Minimum slot interval is 1 hour. Please select time
+        accordingly
+    </string>
+    <string name="filter_by">Filter By</string>
+    <string name="online_payment_facility">Online Payment Facility</string>
+    <string name="show_with_schedule_available">Show with Schedule Available</string>
+    <string name="payment_failed_please_try_again">Payment failed. Please try again</string>
+    <string name="payment_cancelled">Payment cancelled</string>
+    <string name="payment_failuer">Payment failure</string>
+    <string name="mobile_number_not_updated">Mobile Number Not Updated</string>
+    <string name="mobile_number_updated">Mobile Number Updated</string>
+    <string name="loading">Loading</string>
+    <string name="no_specific_insurance_was_added_for_this_property">No specific Insurance was added
+        for this property
+    </string>
+    <string name="there_is_no_description">There is no description added for this property</string>
+    <string name="book">BOOK</string>
+    <string name="booked">Booked</string>
+
+    <string name="processing_your_payment">Processing Your Payment</string>
+    <string name="please_wait_">Please wait . . .</string>
+
+    <string name="hint_ddmmyy"> اختر تاريخ الحجز</string>
+    <!--<string name="please_login_signup_for_completing_the_booking">Please Login/Signup for completing the booking</string>-->
+    <string name="hint_mobile_number">5XXXXXXXX</string>
+    <string name="filters">Filters</string>
+    <string name="distance">Distance</string>
+    <string name="lowest_price">Lowest Price</string>
+
+</resources>

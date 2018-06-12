@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Google map-->
+    <!-- Rahul-->
+    <!--<string name="google_map_id">AIzaSyCMtRdxv51ECqG-f9yhzMU_JNHj4iuRnhE</string>-->
+    <!-- Live-->
+    <string name="google_map_id">AIzaSyAIJ2ejMjytw5qXsZMp4IJ-JOU3i6XBklc</string>
+
+    <!--GCM keys-->
+    <!--<string name="sender_id">341952109863</string>1016110435938-->
+    <!-- Live-->
+    <string name="sender_id">467675705579</string>
+    <string name="sender_key">AIzaSyDxK3CJa5DVY6BHUy4NT9HTXfbJsKtY7dg</string>
+
+    <!--  The property id associated with this analytics tracker -->
+    <!-- Live-->
+    <string name="ga_trackerId">UA-91163855-1</string>
+</resources>

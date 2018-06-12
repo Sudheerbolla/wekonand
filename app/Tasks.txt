@@ -1,0 +1,115 @@
+1. All:
+
+One of the property owners have called me multiple times reporting on an incident that is happening to him. He always use "Mark as close" for the dates that gets booked from his side. But he's
+informing me that after a day or two, the dates return to the color green. May you identify the issue here? Can you check the logs for
+that person whether he actually marked the property as "Mark as closed" ? He is the only owner that is using "Mark as closed" feature,
+this needs to be checked and fixed ASAP
+
+Done from our end: Need to check at server side logic
+
+2. iOS, Android :
+
+in Android and iOS, I noticed people are registering with phone number starting with 0 such as 05xxxxxxxx instead of 5xxxxxxx. We had more than 50 incorrect registrations. I think we need to change
+the text to "5XXXXXXXX" (8 X's) as the attached picture . We need
+to change this in the registration page for iOS and Android only. See attached files...
+
+Done
+
+
+3. All:
+
+Requirement 7: Platform: All platform
+User Type: Users Case: When a property owner makes an offline booking on a specific number, that booking should be shown under "My Booking" for customer who have the same number Requirement:
+If a property owner makes an offline booking for a customer who has
+the following number (+966123456789), if a user is registered in Weekend under the number (+966123456789) should view this offline booking under "My Bookings" with all booking details. This will attract our customers to use the application if they're used to do offline bookings.
+
+Done Need to manage it server side, no need to do anything in app side.
+
+
+4. iOS, Android:
+
+Requirement 9 B: Platform: iOS & Android User Type: Users Case: Ability to add link for youtube (from admin panel only) for properties & sub-properties Requirement: Ability to add link for youtube (from admin panel only) for properties & sub-properties where a user can see icon of youtube and when
+the user clicks on it, it will transfer him/her to youtube where s/he can see a video of the property/subproperty. We should have a visible youtube icon in property details & sub-properties details (only
+if there was a link in admin panel, if there wasn't any link, then it should be hidden). when a user click on the youtube icon, it will
+transfer them to youtube.
+
+Dry code done: Need api changes, Need design for the respective change.
+
+5. iOS, Android:
+
+Requirement 1: Platform: iOS & Android User Type: Users Case: Credit Balance Requirement: every user will have Credit Balance that will start with 0 SAR. The balance can be added manually (offline) by admin panel only. So if a user has 500 SAR in credit. then the user will be able to make any booking for 500 SAR or less. (Admin should be able to change the amount of the user's credit anytime).
+in Android & iOS Menu >> it will be shown as Credit 0 SAR
+(see attached) When a user click on "Credit 0 SAR" it will take them to new screen
+(HTML Based) that will have some instructions on how to contact admin so they can add amount to their balance.
+Scenario 1: When the user have balance of 450 SAR and user want
+to book a property that has down payment of 400 SAR, in the booking_confirmation screen, when user clicks on "Book", the user should have two options : (VISA/MASTER CARD) or (Use Credit). if user clicks use credit, then it should have another confirmation alert
+that says "Are you sure you want to use your current balance for booking", if he clicks yes, then the property should be booked. and
+there will be leftover for 50 SAR in credit balance.
+Scenario 2: When the user have balance of 450 SAR and user want
+to book a property that has down payment of 500 SAR, in the booking_confirmation screen, when user clicks on "Book", the user should have two options : (VISA/MASTER CARD) or (Use Credit). if user clicks use credit, then it should give him an alert saying you do NOT have sufficient fund in your credit balance.
+In summary these things needs to be added/modified: Ability to add balance in admin panel for customer users HTML Page that can be accessed from Android & iOS which content can be modified. Adding Credit #AMOUNT# in iOS & Android Menu Workflow after clicking book will be modified (it should ask whether credit or visa/mastercard).
+
+Need api changes, Need design for the respective change.
+
+6. iOS, Android:
+
+Requirement 2: Platform: iOS & Android User Type: Customer Case 1: SADAD Imeplemntation (New Payment Option) - Payfort
+(SDK)
+Implement Sadad Payment in iOS & Android. So we will have three options (Visa, Mastercard, Sadad)
+I approve this as you told me there is no specific hours to complete
+this. Please find the below information.
+Payfort Reply:
+--------------------
+For SADAD integration , you need to use our API Documentation , to
+integrate this payment option in your website on the test mode , SADAD is active now in your test account and you can start the
+integration of it using the below details :
+https://testfort.payfort.com/api/?#authorization-and-purchase
+Here below the details you need to use :
+Payment ID :SABBP2P_UAT2 Password: hsbc1234 OTP: 728293
+PAYMENT OPTION - Sadad	PAYMENT ID - sadadOlpTest	OTP	- 112358 PASSWORD - 1234
+
+7. iOS, Android:
+
+Requirement 3: Platform: iOS & Android Requirement:
+ Info tab is not visible to many people when I tell them to try using
+the app. How can we make it better in terms of UX? do you
+recommend changing colors? I only need small adjustments in order
+to make it visible to people. I honestly there it needs some small
+touches or maybe some small changes like arrow icons above them or something. Just to give it high attention that people will view it. Please give me some suggestions so we can do it and make it better
+for people. Please ask your UX team to help me here in how we can make better UX for info tab.
+
+Done changed with design approved
+
+8. iOS:
+
+ Can you identify the reason of crashes in iOS and Android from the
+logs? iOS seem to be heavy and crashes more frequently than Android. What's the reason?
+
+
+21-08-2017 Done in V1.3 VC 8
+
+1. After registration, there is a notification that pops up which says "Your account has been activated" and there are two action points, "Review" and "Cancel". We don't need this notification to pop up for customer.
+
+2. Autologin is not working correctly in iOS and Android. When registering, it requires you to login again. Registration should lead you to loggin in immediately and making a booking easily. there is a bug there.
+
+
+Follow following steps:
+1- downlod iOS version from app store (remove it if you have it before)
+2- registration form will come up, register and activate your phone after receiving OTP (I am not sure you can since you dont have number starts with +966)
+3- after activating your account with OTP, A notification alert will pop up saying "Your account is activitated" => I am not sure why we are showing this, this notification alert should be removed
+4- if you go to chalet and go to sub chalet and click "Book now", and then book a date and then click "Book", it will revert you back to login Page => this is why i say it should be autologin, user shouldnt login again, this will decrease the possibility of bookings.
+
+3. In sub-properties, the youtube video there is taken from the YOUTUBE URL of MASTER PROPERTY and not sub-property URL. Every sub-property should have a different video as it has different youtube URL. This is not done right. Please fix it. (make 2 different videos for 2 sub-properties, check them and you will see the mistake)
+
+4. This happened in new update. In android, when launching the app, it doesn't ask me to allow location. Therefore it asks me to input my city. When I close the app and open it again, it goes to main screen saying "No Chalets Found". I have to click on globe icon above to select a city. I am not sure if im the only one facing this problem now. Please check..
+
+
+5.I noticed that splash screen takes 3-4 seconds. And then the loading taken 5 seconds. This is total of 9 seconds of waiting.I think we should utilize the splash screen. Can we have the loading in the splash screen itsself? Instead of letting customer wait for splash screen, and wait for loading
+  I think its better to have it on splash screen, customer will not notice the wait.as Do you get what I mean?
+
+
+Path of live apks : /home/hb/MyData/LiveApks/OnlineSoocer
+
+Login: //id001.email@gmail.com/12345678
+
+Hizri calender : https://github.com/sahaab/HijriCalendar-master

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.weekend.views.bubbles.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.weekend.views.CircleImageView
+            android:id="@+id/imgChatHead"
+            android:layout_width="@dimen/space_70"
+            android:layout_height="@dimen/space_70"
+            android:background="@drawable/profile_decorator"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_chat_group" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp">
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_gray_corner_5"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLength="35"
+                android:maxLines="1"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/color_0_0_0"
+                android:textSize="14sp" />
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/txtMessageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/txtMessage"
+                android:background="@drawable/bubble_counter_bkg"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.weekend.views.bubbles.BubbleLayout>

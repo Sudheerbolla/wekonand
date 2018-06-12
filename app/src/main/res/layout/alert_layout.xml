@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_white_corner_5"
+    android:orientation="vertical">
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_20"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/color_105_111_116"
+        android:textSize="@dimen/txt_17"
+        android:visibility="gone"
+        app:font_type="AvenirNextLTPro_Bold_0" />
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_15"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/space_2"
+        android:textColor="@color/color_105_111_116"
+        android:textSize="@dimen/txt_15"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_20"
+        android:orientation="horizontal">
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_gray_selector"
+            android:gravity="center"
+            android:padding="@dimen/space_12"
+            android:text="@string/deny"
+            android:textColor="@color/color_255_255_255"
+            android:textSize="@dimen/txt_14"
+            app:font_type="AvenirNextLTPro_Medium" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_blue_selector"
+            android:gravity="center"
+            android:padding="@dimen/space_12"
+            android:text="@string/allow"
+            android:textColor="@color/color_255_255_255"
+            android:textSize="@dimen/txt_14"
+            app:font_type="AvenirNextLTPro_Medium" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_243_243_243"
+    tools:context="com.weekend.fragments.ListViewFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_255_255_255"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_3"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_search_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_10"
+            android:src="@mipmap/img_close_sc13b" />
+
+
+        <com.weekend.views.CustomEditText
+            android:id="@+id/edt_search"
+            style="@style/EditText"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_search_close"
+            android:drawableRight="@mipmap/img_search_city_sc22"
+            android:hint="@string/search"
+            android:textColor="@color/color_63_67_72"
+            android:textDirection="rtl"
+            android:textSize="@dimen/txt_12"
+            app:font_type="AvenirNextLTPro_Medium" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_254_218_0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/space_10"
+            android:drawableRight="@mipmap/btn_map_btm"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_10"
+            android:text="@string/switch_to_map_view"
+            android:textColor="@color/color_63_67_72"
+            android:textSize="@dimen/txt_14"
+            app:font_type="AvenirNextLTPro_Medium" />
+    </LinearLayout>
+
+    <com.weekend.views.CustomRecyclerView
+        android:id="@+id/rv_property_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottombar"
+        android:layout_below="@id/rl_search"
+        android:layout_marginTop="@dimen/space_5"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        app:pagination="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottombar"
+        android:visibility="gone">
+
+        <!-- <com.google.android.gms.maps.MapView
+             android:id="@+id/mv_google_map"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />-->
+        <fragment
+            android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_tab_selection"
+        android:gravity="center"
+        android:text="@string/no_chalets_found"
+        android:textColor="@color/color_105_111_116"
+        android:textSize="@dimen/txt_14"
+        android:visibility="gone"
+        app:font_type="AvenirNextLTPro_Medium" />
+
+    <include
+        android:id="@+id/rl_map_item"
+        layout="@layout/inflate_map_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</RelativeLayout>
+

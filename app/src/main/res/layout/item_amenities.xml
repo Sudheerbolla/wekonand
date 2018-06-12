@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/space_3">
+
+    <ImageView
+        android:id="@+id/iv_amenity"
+        android:layout_width="@dimen/space_20"
+        android:layout_height="@dimen/space_20"
+        android:layout_gravity="right"
+        android:src="@mipmap/icon_kitchen" />
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/tv_amenity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5"
+        android:gravity="right"
+        android:textColor="@color/color_63_67_72"
+        android:textSize="@dimen/txt_10"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+
+</LinearLayout>

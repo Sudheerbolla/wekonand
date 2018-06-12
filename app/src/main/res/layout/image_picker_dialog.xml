@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/linImagePicker"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@color/color_255_255_255"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/txtCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/space_25"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_blue_selector"
+            android:gravity="center"
+            android:padding="@dimen/space_12"
+            android:text="Camera"
+            android:textColor="@color/color_255_255_255"
+            android:textSize="@dimen/txt_16"
+            app:font_type="AvenirNextLTPro_Medium" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/txtGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_blue_selector"
+            android:gravity="center"
+            android:padding="@dimen/space_12"
+            android:text="Gallery"
+            android:textColor="@color/color_255_255_255"
+            android:textSize="@dimen/txt_16"
+            app:font_type="AvenirNextLTPro_Medium" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/txtCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="@dimen/space_12"
+            android:text="Cancel"
+            android:textColor="@color/color_0_0_0"
+            android:textSize="@dimen/txt_14"
+            app:font_type="AvenirNextLTPro_Medium" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relFullScreenImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="7dp"
+            android:background="@drawable/close_white"
+            android:gravity="center"
+            android:padding="7dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgViewFullScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

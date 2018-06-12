@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relMapPoint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_map_snippet"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_10"
+    android:paddingLeft="@dimen/space_10"
+    android:paddingRight="@dimen/space_10"
+    android:paddingTop="@dimen/space_5">
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:maxLines="1"
+        android:textColor="@color/color_63_67_72"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:textColor="@color/color_63_67_72"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/txtCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:textColor="@color/color_63_67_72"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+
+</LinearLayout>

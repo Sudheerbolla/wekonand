@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_243_243_243"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:orientation="vertical">
+
+        <com.weekend.views.CustomEditText
+            android:id="@+id/edt_email"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_15"
+            android:drawableRight="@mipmap/icon_email"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+        <com.weekend.views.CustomEditText
+            android:id="@+id/edt_password"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:drawableRight="@mipmap/icon_password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_12"
+            android:orientation="horizontal">
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/tv_remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/icon_checkbox_selector"
+                android:drawablePadding="@dimen/space_5"
+                android:gravity="center_vertical"
+                android:text="@string/remember_me"
+                android:textColor="@color/color_35_120_201"
+                android:textSize="@dimen/txt_11"
+                app:font_type="AvenirNextLTPro_Regular_0" />
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="@string/forgot_password"
+                android:textColor="@color/color_35_120_201"
+                android:textSize="@dimen/txt_10"
+                app:font_type="AvenirNextLTPro_Regular_0" />
+
+        </RelativeLayout>
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@drawable/btn_blue_selector"
+            android:gravity="center"
+            android:padding="@dimen/space_10"
+            android:text="@string/login"
+            android:textColor="@color/color_255_255_255"
+            android:textSize="@dimen/txt_14"
+            app:font_type="AvenirNextLTPro_Medium" />
+
+        <com.weekend.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_15"
+            android:text="@string/new_user"
+            android:textColor="@color/color_117_117_117"
+            android:textSize="@dimen/txt_11"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_5"
+            android:text="@string/signup"
+            android:textColor="@color/color_35_120_201"
+            android:textSize="@dimen/txt_12"
+            app:font_type="AvenirNextLTPro_Medium" />
+    </LinearLayout>
+</LinearLayout>

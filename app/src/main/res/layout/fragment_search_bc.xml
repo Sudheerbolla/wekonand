@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_243_243_243"
+    android:orientation="vertical">
+
+    <com.weekend.views.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/space_10"
+        android:gravity="center_vertical"
+        android:padding="@dimen/space_10"
+        android:text="@string/what_are_you_looking_for"
+        android:textColor="@color/color_63_67_72"
+        android:textSize="@dimen/txt_12"
+        app:font_type="AvenirNextLTPro_Medium" />
+
+    <RadioGroup
+        android:id="@+id/rg_soccer_chalet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="@color/color_255_255_255"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_chalet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="@dimen/space_5"
+            android:drawableTop="@mipmap/icon_chalets"
+            android:gravity="center"
+            android:padding="@dimen/space_5"
+            android:text="@string/chalets"
+            android:textColor="@color/txt_gray_blue_selector"
+            android:textSize="@dimen/txt_14" />
+
+        <RadioButton
+            android:id="@+id/rb_soccer_fields"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="@dimen/space_5"
+            android:drawableTop="@mipmap/icon_soccer_fields"
+            android:gravity="center"
+            android:padding="@dimen/space_5"
+            android:text="@string/soccer_fields"
+            android:textColor="@color/txt_gray_blue_selector"
+            android:textSize="@dimen/txt_14" />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_tab_selection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_2"
+        android:layout_below="@+id/rg_soccer_chalet"
+        android:layout_gravity="bottom"
+        android:background="@color/color_255_255_255"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v_chalets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_35_120_201" />
+
+        <View
+            android:id="@+id/v_soccer_fields"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_35_120_201"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:paddingTop="@dimen/space_10"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10">
+
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.weekend.views.CustomTextView
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomEditText
+                    android:id="@+id/edt_title"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:hint="@string/enter_title"
+                    android:inputType="textEmailAddress"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkin_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_in_date"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_checkin_date"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:drawableLeft="@mipmap/icon_calendar"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/dd_mm_yy"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <!-- <com.weekend.views.CustomEditText
+                     android:id="@+id/edt_location"
+                     style="@style/EditText"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="@dimen/space_3"
+                     android:hint="@string/enter_a_location"
+                     app:font_type="AvenirNextLTPro_Regular_0" />-->
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_location"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:drawableLeft="@mipmap/img_dropdown"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/select_location"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_neighbourhood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/neighbourhood"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_neighbourhood"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:drawableLeft="@mipmap/img_dropdown"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/select_neighbourhood"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_leasing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/leasing"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_leasing"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:drawableLeft="@mipmap/img_dropdown"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/select_leasing"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_size_title"
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/size"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_size"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:drawableLeft="@mipmap/img_dropdown"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/select_size"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_amenities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amenities"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_amenities"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:drawableLeft="@mipmap/img_dropdown"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/select_amenities"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_10"
+                android:visibility="gone">
+
+                <com.weekend.views.CustomTextView
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/bg_white_corner_5">
+
+                        <com.weekend.views.CustomTextView
+                            android:id="@+id/tv_from"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="@dimen/space_10"
+                            android:text="@string/from"
+                            android:textColor="@color/color_105_111_116"
+                            android:textSize="@dimen/txt_14"
+                            app:font_type="AvenirNextLTPro_Regular_0" />
+
+
+                        <com.weekend.views.CustomTextView
+                            android:id="@+id/tv_from_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@id/tv_from"
+                            android:background="@drawable/bg_white_right_gray_stroke_corner_5"
+                            android:gravity="center"
+                            android:hint="@string/select_time"
+                            android:padding="@dimen/space_5"
+                            android:textColor="@color/color_105_111_116"
+                            android:textDirection="rtl"
+                            android:textSize="@dimen/txt_14"
+                            app:font_type="AvenirNextLTPro_Regular_0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/bg_white_corner_5">
+
+                        <com.weekend.views.CustomTextView
+                            android:id="@+id/tv_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="@dimen/space_10"
+                            android:text="@string/to"
+                            android:textColor="@color/color_105_111_116"
+                            android:textSize="@dimen/txt_14"
+                            app:font_type="AvenirNextLTPro_Regular_0" />
+
+                        <com.weekend.views.CustomTextView
+                            android:id="@+id/tv_to_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@id/tv_to"
+                            android:background="@drawable/bg_white_right_gray_stroke_corner_5"
+                            android:gravity="center"
+                            android:hint="@string/select_time"
+                            android:padding="@dimen/space_5"
+                            android:textColor="@color/color_105_111_116"
+                            android:textDirection="rtl"
+                            android:textSize="@dimen/txt_14"
+                            app:font_type="AvenirNextLTPro_Regular_0" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_prefered_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preferred_price"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:orientation="horizontal">
+
+
+                    <com.weekend.views.CustomEditText
+                        android:id="@+id/edt_min_price"
+                        style="@style/EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_weight="0.5"
+                        android:gravity="right"
+                        android:hint="@string/min_price"
+                        android:inputType="number|numberDecimal"
+                        app:font_type="AvenirNextLTPro_Regular_0" />
+
+                    <com.weekend.views.CustomEditText
+                        android:id="@+id/edt_max_price"
+                        style="@style/EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_5"
+
+                        android:layout_weight="0.5"
+                        android:gravity="right"
+                        android:hint="@string/max_price"
+                        android:inputType="number|numberDecimal"
+                        app:font_type="AvenirNextLTPro_Regular_0" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sections"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_sections"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:drawableLeft="@mipmap/img_dropdown"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/select_sections"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_suitable_for"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    style="@style/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suitable_for"
+                    android:textDirection="rtl"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/tv_suitable_for"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:drawableLeft="@mipmap/img_dropdown"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/suitable_for"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@drawable/btn_blue_selector"
+                android:padding="@dimen/space_10">
+
+                <com.weekend.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/icon_search_1"
+                    android:drawablePadding="@dimen/space_5"
+                    android:gravity="center"
+                    android:text="@string/search_caps"
+                    android:textColor="@color/color_255_255_255"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

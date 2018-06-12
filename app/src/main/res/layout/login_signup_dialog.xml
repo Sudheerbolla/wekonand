@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_white_corner_5"
+    android:orientation="vertical"
+    android:padding="@dimen/space_5">
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/space_15"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/color_105_111_116"
+        android:textSize="@dimen/txt_17"
+        android:visibility="visible"
+        app:font_type="AvenirNextLTPro_Bold_0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="vertical">
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_5"
+            android:gravity="center"
+            android:padding="@dimen/space_5"
+            android:textColor="@color/color_63_67_72"
+            android:textSize="@dimen/txt_14"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_35"
+            android:layout_marginRight="@dimen/space_35"
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@drawable/btn_blue_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_60"
+            android:paddingRight="@dimen/space_60"
+            android:paddingTop="@dimen/space_10"
+            android:text="@string/login"
+            android:textColor="@color/color_255_255_255"
+            android:textSize="@dimen/txt_13"
+            app:font_type="AvenirNextLTPro_Medium" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/txtSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_35"
+            android:layout_marginRight="@dimen/space_35"
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@drawable/btn_blue_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_60"
+            android:paddingRight="@dimen/space_60"
+            android:paddingTop="@dimen/space_10"
+            android:text="@string/quick_signup"
+            android:textColor="@color/color_255_255_255"
+            android:textSize="@dimen/txt_13"
+            app:font_type="AvenirNextLTPro_Medium" />
+
+    </LinearLayout>
+
+</LinearLayout>

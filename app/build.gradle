@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.customer.weekend"
+        minSdkVersion 15
+        targetSdkVersion 19
+        versionCode 9
+        versionName "1.4"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+allprojects {
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/mint-5.1.0.jar')
+
+    //  PayFort SDK refrences
+//    compile(name: 'FORTSDKv1.2', ext: 'aar')
+    compile(name: 'FORTSDKv1.2', ext: 'aar')
+    compile files('libs/httpclient-4.3.4.jar')
+    compile files('libs/httpmime-4.2.5.jar')
+    compile files('libs/commons-codec-1.6.jar')
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile project(':sample-core')
+//    compile project(':sample-core')
+    compile('de.keyboardsurfer.android.widget:crouton:1.8.5@aar') {
+        // exclusion is not necessary, but generally a good idea.
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:cardview-v7:25.0.1'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile 'com.google.android.gms:play-services-location:10.0.1'
+    compile 'com.google.android.gms:play-services-maps:10.0.1'
+    compile 'com.google.android.gms:play-services-identity:10.0.1'
+    compile 'com.google.android.gms:play-services-base:10.0.1'
+    compile 'com.google.android.gms:play-services-gcm:10.0.1'
+    compile 'com.google.android.gms:play-services-analytics:10.0.1'
+    compile 'com.wang.avi:library:2.0.3'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.eftimoff:android-viewpager-transformers:1.0.1@aar'
+    compile 'com.victor:lib:1.0.1'
+    compile 'com.shamanland:fonticon:0.1.8'
+    compile 'com.google.guava:guava:19.0'
+    compile 'org.bouncycastle:bcprov-jdk16:1.46'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.quickblox:quickblox-android-sdk-chat:3.2.0'
+    compile 'com.quickblox:quickblox-android-sdk-content:3.2.0'
+    compile 'com.quickblox:quickblox-android-sdk-messages:3.2.0'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://github.com/QuickBlox/quickblox-android-sdk-releases/raw/master/"
+        }
+    }
+}

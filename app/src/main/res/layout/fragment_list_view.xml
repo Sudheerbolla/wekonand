@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_243_243_243">
+
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.weekend.fragments.ListViewFragment">
+
+        <RelativeLayout
+            android:id="@+id/relSearchlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_35_120_201"
+            android:gravity="center"
+            android:padding="@dimen/space_5">
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/txtFilters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/space_3"
+                android:background="@drawable/bg_filter_corner"
+                android:drawableLeft="@drawable/filter_new"
+                android:drawablePadding="@dimen/space_5"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingLeft="@dimen/space_7"
+                android:paddingRight="@dimen/space_7"
+                android:paddingTop="@dimen/space_5"
+                android:text="@string/filters"
+                android:textColor="@color/color_255_255_255"
+                app:font_type="AvenirNextLTPro_Medium" />
+
+            <com.weekend.views.CustomEditText
+                android:id="@+id/edtSearchChaletName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_3"
+                android:layout_toRightOf="@+id/txtFilters"
+                android:background="@drawable/bg_white_corner_5"
+                android:drawablePadding="@dimen/space_5"
+                android:drawableRight="@mipmap/icon_search_2"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:hint="@string/enter_title"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/space_8"
+                android:paddingLeft="@dimen/space_7"
+                android:paddingRight="@dimen/space_7"
+                android:paddingTop="@dimen/space_8"
+                android:singleLine="true"
+                android:textColor="@color/color_105_111_116"
+                android:textColorHint="@color/color_153_161_168"
+                android:textDirection="rtl"
+                android:textSize="@dimen/txt_14"
+                app:font_type="AvenirNextLTPro_Regular_0" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_254_218_0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/tv_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/space_5"
+                android:drawableRight="@mipmap/btn_map_btm"
+                android:gravity="center_vertical"
+                android:padding="@dimen/space_10"
+                android:text="@string/switch_to_map_view"
+                android:textColor="@color/color_63_67_72"
+                android:textSize="@dimen/txt_14"
+                app:font_type="AvenirNextLTPro_Medium" />
+
+        </LinearLayout>
+
+        <com.weekend.views.CustomRecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_bottombar"
+            android:layout_below="@id/relSearchlayout"
+            android:overScrollMode="never"
+            android:paddingTop="@dimen/space_5"
+            android:scrollbars="none"
+            android:visibility="gone"
+            app:pagination="true" />
+
+        <FrameLayout
+            android:id="@+id/fl_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_bottombar"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/mapView"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_no_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_tab_selection"
+            android:gravity="center"
+            android:text="@string/no_chalets_found"
+            android:textColor="@color/color_105_111_116"
+            android:textSize="@dimen/txt_14"
+            android:visibility="gone"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+        <include
+            android:id="@+id/cv_filter"
+            layout="@layout/inflate_filter_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/cv_sort"
+            layout="@layout/inflate_sorting_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/rl_map_item"
+            layout="@layout/inflate_map_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

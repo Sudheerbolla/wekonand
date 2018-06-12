@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="navbar_width">620px</dimen>
+    <dimen name="image_window_height">200dp</dimen>
+</resources>

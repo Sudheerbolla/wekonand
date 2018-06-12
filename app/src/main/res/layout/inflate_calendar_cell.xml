@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_cell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_255_178_140"
+    android:gravity="center"
+    android:minHeight="@dimen/space_50"
+    android:minWidth="@dimen/space_50"
+    android:orientation="vertical">
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_85_85_85"
+        android:textSize="@dimen/txt_12"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+</LinearLayout>

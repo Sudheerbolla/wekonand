@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- The main content view -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/rl_topbar"
+                layout="@layout/inflate_topbar" />
+
+            <FrameLayout
+                android:id="@+id/fl_content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <!-- The navigation drawer -->
+        <LinearLayout
+            android:id="@+id/ll_navbar_container"
+            android:layout_width="@dimen/navbar_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/color_255_255_255"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/ll_navbar"
+                layout="@layout/inflate_navbar" />
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <include
+        android:id="@+id/fl_progress_bar"
+        layout="@layout/inflate_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

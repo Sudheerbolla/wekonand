@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextView">
+        <attr name="font_type" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="font_type" />
+    </declare-styleable>
+
+    <attr name="font_type">
+        <enum name="AvenirNextLTPro_Bold_0" value="1" />
+        <enum name="AvenirNextLTPro_Demi_0" value="2" />
+        <enum name="AvenirNextLTPro_DemiIt_0" value="3" />
+        <enum name="AvenirNextLTPro_It_0" value="4" />
+        <enum name="AvenirNextLTPro_Medium" value="5" />
+        <enum name="AvenirNextLTPro_Regular_0" value="6" />
+    </attr>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference"></attr>
+    </declare-styleable>
+
+    // RecyclerView resources
+    <declare-styleable name="CustomRecyclerView">
+        <attr name="pagination" format="boolean" />
+        <attr name="loadmore_visibility" format="boolean" />
+        <attr name="gird_span" format="integer" />
+        <attr name="list_type" />
+        <attr name="list_orientation" />
+        <attr name="loadmore_type" />
+    </declare-styleable>
+
+    <attr name="loadmore_type">
+        <enum name="bottom" value="0" />
+        <enum name="top" value="1" />
+    </attr>
+
+    <attr name="list_type">
+        <enum name="list" value="0" />
+        <enum name="grid" value="1" />
+        <enum name="staggered" value="2" />
+    </attr>
+
+    <attr name="list_orientation">
+        <enum name="vertical" value="0" />
+        <enum name="horizontal" value="1" />
+    </attr>
+    <integer-array name="color_array">
+        <item>@color/color_35_120_201</item>
+        <item>@color/color_35_120_201</item>
+        <item>@color/color_35_120_201</item>
+        <item>@color/color_35_120_201</item>
+    </integer-array>
+
+    <declare-styleable name="ParallaxScroll">
+        <attr name="parallax_factor" format="float" />
+        <attr name="alpha_factor" format="float" />
+        <attr name="inner_parallax_factor" format="float" />
+        <attr name="parallax_views_num" format="integer" />
+        <attr name="circular_parallax" format="boolean" />
+    </declare-styleable>
+
+</resources>

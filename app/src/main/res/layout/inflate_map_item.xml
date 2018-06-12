@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_243_243_243"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_map_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="@dimen/space_10"
+            android:src="@mipmap/img_close_sc13b" />
+
+        <RelativeLayout
+            android:id="@+id/rl_map_detail_item"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_height="200dp">
+
+            <com.weekend.views.customimageview.RoundedImageView
+                android:id="@+id/iv_map_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:riv_corner_radius="@dimen/space_1" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager_chalet"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imgPlaceHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/loading_img"
+                android:visibility="gone" />
+
+            <com.weekend.views.customimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img_shadow_listing_sc23"
+                app:riv_corner_radius="@dimen/space_1" />
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/tv_map_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/space_8"
+                android:background="@mipmap/img_price_tag_sc23"
+                android:gravity="center"
+                android:maxWidth="@dimen/space_100"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingRight="@dimen/space_5"
+                android:singleLine="true"
+                android:text="@string/currency"
+                android:textColor="@color/color_63_67_72"
+                android:textSize="@dimen/txt_11"
+                app:font_type="AvenirNextLTPro_Demi_0" />
+
+            <ImageView
+                android:id="@+id/iv_map_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_map_price"
+                android:padding="@dimen/space_5"
+                android:src="@mipmap/icon_report" />
+
+            <ImageView
+                android:id="@+id/iv_map_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_map_price"
+                android:padding="@dimen/space_8"
+                android:src="@drawable/btn_favorite_selector" />
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/tv_map_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_7"
+                android:layout_marginTop="@dimen/space_8"
+                android:drawableLeft="@mipmap/img_rating_sc12"
+                android:drawablePadding="@dimen/space_5"
+                android:gravity="center"
+                android:text="4.3"
+                android:textColor="@color/color_255_255_255"
+                android:textSize="@dimen/txt_9"
+                app:font_type="AvenirNextLTPro_Regular_0" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginLeft="@dimen/space_4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_map_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_4"
+                    android:src="@mipmap/img_recommended_sc23" />
+
+                <ImageView
+                    android:id="@+id/iv_map_verified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/img_verified_sc23" />
+            </LinearLayout>
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/tv_map_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginRight="@dimen/space_8"
+                android:ellipsize="end"
+                android:maxWidth="250dp"
+                android:singleLine="true"
+                android:textColor="@color/color_181_181_181"
+                android:textSize="@dimen/txt_10"
+                app:font_type="AvenirNextLTPro_Regular_0" />
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/tv_map_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_map_address"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_8"
+                android:ellipsize="end"
+                android:maxWidth="250dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="-4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:singleLine="true"
+                android:textColor="@color/color_255_255_255"
+                android:textSize="@dimen/txt_13"
+                app:font_type="AvenirNextLTPro_Medium" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

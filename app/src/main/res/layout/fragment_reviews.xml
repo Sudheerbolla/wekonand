@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_243_243_243"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10"
+        android:visibility="gone">
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_total_reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/color_35_120_201"
+            android:textSize="@dimen/txt_10"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+        <View
+            android:id="@+id/v_separator"
+            android:layout_width="@dimen/space_1"
+            android:layout_height="14dp"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_toLeftOf="@id/tv_total_reviews"
+            android:background="@color/color_208_208_208" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/v_separator"
+            android:textColor="@color/color_105_111_116"
+            android:textSize="@dimen/txt_10"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_3"
+            android:layout_toLeftOf="@id/tv_rating"
+            android:src="@mipmap/img_rating_sc12" />
+    </RelativeLayout>
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/tv_rate_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/btn_blue_selector"
+        android:gravity="center"
+        android:padding="@dimen/space_10"
+        android:text="@string/rate_this_property"
+        android:textColor="@color/color_255_255_255"
+        android:textSize="@dimen/txt_14"
+        app:font_type="AvenirNextLTPro_Medium" />
+    <!---->
+
+    <com.weekend.views.CustomRecyclerView
+        android:id="@+id/rv_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_rate_property"
+        android:layout_below="@id/rl_reviews"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone"
+        app:pagination="true" />
+
+    <com.weekend.views.CustomTextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_tab_selection"
+        android:gravity="center"
+        android:text="@string/you_have_no_reviews"
+        android:textColor="@color/color_105_111_116"
+        android:textSize="@dimen/txt_14"
+        android:visibility="gone"
+        app:font_type="AvenirNextLTPro_Regular_0" />
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/chatContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_chat_send_container"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/layout_chat_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutShowAdmins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvAdmins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/space_110"
+                    android:layout_gravity="center" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/txtCustomMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_7"
+                    android:layout_marginRight="@dimen/space_7"
+                    android:alpha="0.6"
+                    android:gravity="center"
+                    android:padding="@dimen/space_7"
+                    android:text="Ask us anything, or share your feedback.We are happy to help"
+                    android:textColor="@color/color_255_255_255"
+                    android:textSize="@dimen/txt_13"
+                    app:font_type="AvenirNextLTPro_Regular_0" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:layout_marginBottom="@dimen/space_7"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:alpha="0.5"
+                    android:background="@color/color_255_255_255" />
+
+                <com.weekend.views.CustomTextView
+                    android:id="@+id/txtReplyTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/space_7"
+                    android:gravity="center"
+                    android:padding="@dimen/space_7"
+                    android:text="Typically replies in under 15m"
+                    android:textColor="@color/color_255_255_255"
+                    android:textSize="@dimen/txt_14"
+                    app:font_type="AvenirNextLTPro_Medium" />
+
+            </LinearLayout>
+
+            <com.weekend.views.CustomRecyclerView
+                android:id="@+id/rv_chat_messages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutShowAdmins"
+                android:padding="@dimen/space_5"
+                app:list_orientation="vertical"
+                app:list_type="list"
+                app:pagination="true"
+                app:reverseLayout="true" />
+
+            <ProgressBar
+                android:id="@+id/progress_chat"
+                style="@style/CenterProgressBarStyle" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_chat_send_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_233_231_231"
+        android:padding="@dimen/space_4">
+
+        <ImageButton
+            android:id="@+id/button_chat_attachment"
+            style="@style/BorderlessImageButtonStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_attachment" />
+
+        <com.weekend.views.CustomEditText
+            android:id="@+id/edit_chat_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/space_4"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_toLeftOf="@+id/button_chat_send"
+            android:layout_toRightOf="@id/button_chat_attachment"
+            android:background="@drawable/bg_white_corner_10"
+            android:inputType="textShortMessage"
+            android:maxLength="1024"
+            android:padding="@dimen/space_8" />
+
+        <ImageButton
+            android:id="@+id/button_chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/space_2"
+            android:background="@drawable/blue_circle"
+            android:padding="@dimen/space_8"
+            android:src="@drawable/ic_send" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

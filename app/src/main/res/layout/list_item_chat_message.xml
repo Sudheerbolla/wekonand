@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relMessage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_3"
+    android:orientation="vertical"
+    android:padding="@dimen/space_5">
+
+    <RelativeLayout
+        android:id="@+id/relIncoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space_50"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.weekend.views.CircleImageView
+            android:id="@+id/imageViewProfilePic"
+            android:layout_width="@dimen/space_28"
+            android:layout_height="@dimen/space_28"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/space_7"
+            android:layout_marginRight="@dimen/space_7"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageViewProfilePic"
+            android:background="@drawable/bg_incoming">
+
+            <ImageView
+                android:id="@+id/imageViewAttachmentIncoming"
+                android:layout_width="@dimen/space_120"
+                android:layout_height="@dimen/space_120"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/bg_incoming"
+                android:padding="@dimen/space_2"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/txtIncomingTimeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageViewAttachmentIncoming"
+                android:layout_margin="@dimen/space_5"
+                android:padding="@dimen/space_2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_11"
+                android:visibility="gone"
+                app:font_type="AvenirNextLTPro_Regular_0" />
+
+            <RelativeLayout
+                android:id="@+id/relProgressIncoming"
+                android:layout_width="@dimen/space_120"
+                android:layout_height="@dimen/space_120"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/space_2"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/txtUserMessageIncoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/txtIncomingTimeText"
+                android:gravity="left"
+                android:paddingBottom="@dimen/space_7"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_7"
+                android:textColor="@color/color_0_0_0"
+                android:textSize="@dimen/txt_15"
+                android:visibility="gone"
+                app:font_type="AvenirNextLTPro_Medium" />
+
+            <com.weekend.views.CustomTextView
+                android:id="@+id/txtIncomingTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/space_6"
+                android:padding="@dimen/space_2"
+                android:textColor="@color/color_0_0_0"
+                android:textSize="@dimen/txt_11"
+                android:visibility="gone"
+                app:font_type="AvenirNextLTPro_Regular_0" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relOutGoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="75dp"
+        android:background="@drawable/bg_outgoing"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewAttachmentOutGoing"
+            android:layout_width="@dimen/space_120"
+            android:layout_height="@dimen/space_120"
+            android:background="@drawable/bg_outgoing"
+            android:padding="@dimen/space_2"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/txtOutGoingTimeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageViewAttachmentOutGoing"
+            android:layout_margin="@dimen/space_5"
+            android:padding="@dimen/space_2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_11"
+            android:visibility="gone"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+        <RelativeLayout
+            android:id="@+id/relProgressOutGoing"
+            android:layout_width="@dimen/space_120"
+            android:layout_height="@dimen/space_120"
+            android:padding="@dimen/space_2"
+            android:scaleType="centerCrop"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/txtUserMessageOutGoing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtOutGoingTimeText"
+            android:gravity="right"
+            android:paddingBottom="@dimen/space_7"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingTop="@dimen/space_7"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_15"
+            android:visibility="gone"
+            app:font_type="AvenirNextLTPro_Medium" />
+
+        <com.weekend.views.CustomTextView
+            android:id="@+id/txtOutGoingTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/space_6"
+            android:padding="@dimen/space_2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_11"
+            android:visibility="gone"
+            app:font_type="AvenirNextLTPro_Regular_0" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
